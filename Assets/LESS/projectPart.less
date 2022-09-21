@@ -1,0 +1,118 @@
+@import "index.less";
+
+// Mixin
+.numberOne_StyleTitle(@firtColor, @secondColor, @thirdColor){
+    color: #fff;
+    margin-top: 10px;
+    .titlesStyling('Iceberg', cursive);
+    background: linear-gradient(160deg, @firtColor, @secondColor, @thirdColor);
+    -moz-background-clip: text;
+    -moz-color-fill: transparent;
+    -webkit-background-clip: text;
+    -webkit-color-fill: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.projectsHeader{
+    width: 50%;
+    margin: 25px auto;
+
+    .titleProject{
+        color: #fff;
+        .titlesStyling('Iceberg', cursive);
+        margin: 10px 0px;
+        font-size: 40px;
+    }
+}
+
+.projectParent{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .projectParent_numberOne{
+        width: 50%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        .numberOne_image{
+            width: 50%;
+            height: 200px;
+            border-radius: 20px;
+        }
+
+        .numberOne_text{
+            color: #fff;
+            text-align: center;
+            margin-top: 20px;
+            width: 80%;
+            font-family: 'Share Tech Mono', monospace;
+        }
+
+        .numberOne_btns{
+            margin-top: 15px;
+            width: 300px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .btnThisBrowser{
+                padding: 10px;
+                height: 35px;
+                border-radius: 20px;
+                box-shadow: 0px 1px 4px #fff;
+                background: linear-gradient(160deg, #00FF23, #00A917, #006F0F);
+                color: #fff;
+                border: none;
+            }
+            .btnNewBrowser{
+                padding: 10px;
+                height: 35px;
+                border-radius: 20px;
+                box-shadow: 0px 1px 4px #fff;
+                background: linear-gradient(160deg, #00FF23,#00A917,#006F0F);
+                color: #fff;
+                border: none;
+                text-decoration: none;
+            }
+        }
+
+        .numberOne_titlePloiesti{
+            .numberOne_StyleTitle(#C70039, #900C3F, #581845);
+        }
+        .numberOne_titleSpaceBook{
+            .numberOne_StyleTitle(#01B0E3, #027EA2, #00495F);
+        }
+        .numberOne_titleTravelAgency{
+            .numberOne_StyleTitle(#EA1900, #A61200, #6C0B00);
+        }
+        .numberOne_titleNewsOutlet{
+            .numberOne_StyleTitle(#E0E0E0, #B7B7B7, #939393);
+        }
+        .numberOne_titleCreatingUsers{
+            .numberOne_StyleTitle(#00FCF4, #00A29D, #006E6B);
+        }
+    }
+
+    .iframe{
+        width: 50%;
+        height: 500px;
+    }
+}
+
+@media  (max-width: 1150px) {
+    .projectParent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

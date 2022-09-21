@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 7%;
+  border-top: 2px solid #DFDFDF;
+  text-align: center;
+}
+.homeBody {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-auto-flow: row;
+  grid-auto-rows: auto;
+}
+.navIndex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  font-family: 'Kaushan Script', cursive;
+  border-bottom: 2px solid #DFDFDF;
+}
+.hiddenNav {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  display: grid;
+  grid-template-columns: 230px 0px;
+  z-index: 200;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+  transform: translateX(-230px);
+}
+.hiden_navLinks {
+  background-color: #750928;
+  border-spacing: 0px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'Kaushan Script', cursive;
+}
+.hiden_navLinks .hidden__linksLI {
+  transition: all 0.5s ease-in-out;
+  margin-top: 20px;
+}
+.hiden_navLinks .hidden__linksLI:hover {
+  transform: scale(1.2);
+  color: #900C3F;
+}
+.hiden_navLinks .hidden__linksLI .hidden__btnLink {
+  text-decoration: none;
+  color: #ffffff;
+  width: 100%;
+}
+.hiddenBtn {
+  margin-top: 10px;
+  background-color: #750928;
+  width: 50px;
+  height: 50px;
+  border-radius: 0px 30px 30px 0px;
+  border-spacing: 0px;
+  display: block;
+}
+.hiddenBtnLeft {
+  margin-top: 10px;
+  background-color: #750928;
+  width: 50px;
+  height: 50px;
+  border-radius: 0px 30px 30px 0px;
+  border-spacing: 0px;
+  display: none;
+}
+.rightArrow {
+  color: #fff;
+  margin: 20% 20% 20% 20%;
+  font-size: 30px;
+}
+.leftArrow {
+  color: #fff;
+  margin: 20% 20% 20% 20%;
+  font-size: 30px;
+}
+.logoIndex {
+  font-size: 40px;
+  font-weight: 900;
+  font-style: italic;
+  background: linear-gradient(160deg, #C70039, #900C3F, #581845);
+  -moz-background-clip: text;
+  -moz-color-fill: transparent;
+  -webkit-background-clip: text;
+  -webkit-color-fill: transparent;
+  background-clip: text;
+  color: transparent;
+  padding: 0px 20px;
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
+  cursor: pointer;
+}
+.logoLink {
+  text-decoration: none;
+}
+.containerLinks {
+  padding: 0px 12px;
+}
+.containerLinks .navLinks {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.containerLinks .navLinks .linksLI {
+  transition: all 0.5s ease-in-out;
+}
+.containerLinks .navLinks .linksLI:hover {
+  transform: scale(1.2);
+  color: #900C3F;
+}
+.containerLinks .navLinks .linksLI .btnLink {
+  text-decoration: none;
+  color: #C70039;
+  width: 100%;
+}
+@media (max-width: 899px) {
+  .containerLinks {
+    display: none;
+  }
+  .navIndex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .hiddenNav {
+    transition: all 1.5s ease-in-out;
+    position: fixed;
+  }
+}
+@media (min-width: 900px) {
+  .hiddenNav {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .logoIndex {
+    font-size: 30px;
+  }
+}
+@media (max-width: 350px) {
+  .logoIndex {
+    font-size: 25px;
+  }
+}
+@media (max-width: 300px) {
+  .logoIndex {
+    width: 150px;
+  }
+}

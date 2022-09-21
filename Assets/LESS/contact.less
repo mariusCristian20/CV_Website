@@ -1,0 +1,66 @@
+@import "index.less";
+
+.contact{
+    width: 70%;
+    margin: 0px auto;
+    margin-top: 50px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+
+    .contact_legend{
+        color: #fff;
+        font-size: 30px;
+        padding: 0px 10px;
+        font-family: 'Share Tech Mono',monospace;
+    }
+
+    .formStyle{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+
+        .formStyle_title{
+            color: #fff;
+            font-size: 25px;
+            font-family: 'Share Tech Mono', monospace;
+        }
+
+        .formStyle_personalInfo, .formStyle_email, .formStyle_phone{
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+            color: #fff;
+
+            .personalInfo_label, .personalInfo_labelEmail, .personalInfo_labelPhone{
+                font-family: 'Iceberg', cursive;
+                font-size: larger;
+            }
+
+            .personalInfo_myName, .personalInfo_myEmail, .personalInfo_myPhone{
+                padding: 5px;
+                border-radius: 10px;
+                border: none;
+            }
+            .personalInfo_yourMessage{
+                border-radius: 10px;
+            }
+        }
+
+        .sendBtn{
+            margin: 20px 0px 20px 0px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: #000;
+            font-family: 'Share Tech Mono', monospace;
+            font-weight: 500;
+        }
+    }
+}

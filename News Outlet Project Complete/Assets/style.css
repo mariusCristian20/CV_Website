@@ -1,0 +1,778 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body.indexBody {
+    width: 100%;
+    height: 100vh;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #131313;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 12.6%;
+}
+
+.btnNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 1% 5% 1% 0%; */
+    /* width: 30%; */
+    color: #fff;
+}
+
+.btnLinkNav {
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    transition: all .3s ease-in-out;
+}
+
+.btnLinkNav:hover {
+    transform: scale(1.2);
+}
+
+.searchBarForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+}
+
+.searchBar {
+    background: #fff;
+    border: 1px solid #C9CFCF;
+    border-radius: 20px;
+    height: 30px;
+}
+
+div.logo {
+    font-size: 200%;
+    font-weight: 900;
+    margin: 1% 0% 1% 5%;
+    font-family: 'Anton', sans-serif;
+    transform: perspective(23px);
+}
+
+a.logoLink {
+    color: #fff;
+    text-decoration: none;
+}
+
+div.logo:hover {
+    transform: rotate3d(-5, 10, 0, 40deg) scale(1.5);
+}
+
+#burgerMenu {
+    color: #fff;
+    margin-right: 10px;
+}
+
+.menuHover {
+    margin: 1% 5% 1% 0%;
+    width: 30%;
+}
+
+#burgerMenu:hover {
+    display: block;
+}
+
+/* !Content */
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 87.4%;
+}
+
+/* ? side bar content */
+div.sideBar {
+    background-color: #333333;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    float: left;
+}
+
+div.fastBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+a.sideBtn {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    transition: all .5s ease-in-out;
+}
+
+a.sideBtn:hover {
+    transform: scale(1.2);
+}
+
+div.profile {
+    width: fit-content;
+    height: fit-content;
+    color: #fff;
+    text-align: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    transition: all .5s ease-in-out;
+}
+
+a.sideProfileLink {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+div.profile:hover {
+    transform: scale(1.2);
+}
+
+.imgProfile {
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+/* ? main content */
+
+div.mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #5A5A5A;
+    width: 80%;
+    height: 100%;
+    float: right;
+}
+
+div.feed {
+    width: 95%;
+    height: 85%;
+    margin: 0px 35px 0px 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 250px 250px 250px 250px 250px;
+    gap: 20px;
+    overflow-y: scroll;
+}
+
+/* !news boxes */
+.imageNews {
+    width: 220px;
+    height: 110px;
+}
+
+a.newsBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 308px;
+    height: 250px; */
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    background-color: #333333;
+    transition: all .3s ease-in-out;
+    transition-delay: .5s;
+}
+
+a.newsBox:hover {
+    transform: scale(1.1);
+}
+
+.newsOutletChannel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10px;
+}
+
+.imageOutlet {
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+}
+
+.newsChannel {
+    display: inline;
+    margin-left: 5px;
+}
+
+
+/* ! Read Page */
+
+body.bodyReadPage {
+    background-color: #5A5A5A;
+    height: fit-content;
+}
+
+.readContent {
+    width: 80%;
+    height: 100%;
+    margin-left: 4%;
+    margin-right: 4%;
+    /* background-color: #5A5A5A; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    /* overflow-y: scroll; */
+    margin-top: 30px;
+}
+
+.mainReadContent {
+    width: 80%;
+    height: 500px;
+    /* padding-top: 80px; */
+}
+
+.reactionBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    margin: 20px 0px 20px 0px;
+}
+
+#share {
+    font-size: 30px;
+    transition: all .5s ease-in-out;
+}
+
+#like {
+    font-size: 30px;
+    transition: all .5s ease-in-out;
+}
+
+#share:hover {
+    color: #fff;
+    transform: scale(1.2);
+}
+
+#like:hover {
+    color: #fff;
+    transform: scale(1.2);
+}
+
+.commentsSection {
+    width: 80%;
+    height: 50%;
+    /* overflow-y: scroll; */
+}
+
+/* Profile Comments */
+
+.commentProfile {
+    margin-bottom: 4%;
+    background-color: #333333;
+}
+
+.imgAndName {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.profileImage {
+    border-radius: 30px;
+}
+
+.name {
+    margin-left: 10px;
+}
+
+.comment {
+    margin: 1% 0% 0% 6%;
+}
+
+/* ! Post Page */
+
+body.bodyPostPage {
+    background-color: #5A5A5A;
+    height: fit-content;
+}
+
+.formStyle {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin: 30px 0px 30px 30px;
+}
+
+.titleInput {
+    height: 25px;
+    width: 200px;
+    background-color: #fff;
+    border: none;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin: 5px 0px 20px 10px;
+}
+
+.textareaSection {
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    margin: 5px 0px 20px 10px;
+}
+
+.authorText {
+    height: 25px;
+    width: 200px;
+    background-color: #fff;
+    border: none;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin: 5px 0px 20px 10px;
+}
+
+.fileInput,
+.dateInput,
+.timeInput {
+    margin: 5px 0px 20px 10px;
+}
+
+.submitBtn {
+    height: 40px;
+    width: 150px;
+    background-color: #131313;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-weight: 800;
+    border-radius: 20px;
+    border: 3px solid #000000;
+    margin: 5px 0px 20px 10px;
+}
+
+.titleForOtherStories {
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin: 5px 0px 20px 30px;
+}
+
+.otherStories {
+    height: fit-content;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%;
+    height: fit-content;
+    background-color: #333333;
+    margin: 0% 0% 2% 5%;
+    /* border-radius: 10px; */
+}
+
+.cardImage {
+    width: 206.34px;
+    height: 206.34px;
+}
+
+.imageOtherStories {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    /* border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; */
+}
+
+.contentCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 70%;
+    height: fit-content;
+}
+
+.newsTitleStory {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin: 8px 0px 10px 10px;
+}
+
+.newsContentStory {
+    color: #fff;
+    margin: 8px 0px 10px 10px;
+}
+
+
+/* ! News Outlet */
+
+body.newsOutletspage {
+    background-color: #5A5A5A;
+    height: fit-content;
+}
+
+.imageNewsOutlets {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    /* border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; */
+}
+
+.newsOutletCards {
+    margin-top: 20px;
+}
+
+.subscribeBtn {
+    height: 40px;
+    width: 150px;
+    background-color: #c91717;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-weight: 800;
+    border-radius: 20px;
+    border: 3px solid #ff0000;
+    margin: 5px 0px 20px 10px;
+}
+
+/* !Subscrition Page */
+
+
+body.subscriptionPageBody {
+    background-color: #5A5A5A;
+    height: fit-content;
+}
+
+.titleSubscribed {
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin: 5px 0px 20px 30px;
+}
+
+.subscribeDBtn {
+    height: 40px;
+    width: 150px;
+    background-color: #464646;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-weight: 800;
+    border-radius: 20px;
+    border: 3px solid #696969;
+    margin: 5px 0px 20px 10px;
+}
+
+/* !Your History */
+
+.historyPageBody {
+    background-color: #5A5A5A;
+    height: fit-content;
+}
+
+.newsOutletChannelHistory {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+/* !Profile */
+
+.profileBody {
+    background-color: #5A5A5A;
+    height: fit-content;
+}
+
+.profileInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0% 5% 0%;
+}
+
+.imageProfile2 {
+    width: 140px;
+    height: 140px;
+    border: 3px solid #000000;
+    border-radius: 90px;
+}
+
+div.infoPosition {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 0% 0% 0% 20%;
+}
+
+.nameProfile2,
+.job,
+.location,
+.infoPerson,
+.oldPost {
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin-bottom: 3%;
+}
+
+.inputBTN2 {
+    width: 100px;
+    height: 25px;
+    background-color: #fff;
+    border: none;
+    border-radius: 30px;
+    margin-bottom: 5%;
+}
+
+/* ?Media Queries */
+
+@media (max-width: 500px) {
+    .navBar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menuHover {
+        margin-right: 2.5%;
+        font-size: 5px;
+    }
+
+    .searchBar {
+        width: 80px;
+    }
+
+    .cardImage {
+        width: 100%;
+        height: 206.34px;
+
+    }
+
+    .imageOtherStories {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    div.fastBtn1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        font-size: 10px;
+
+    }
+
+
+}
+
+@media (max-width: 850px) {
+    .btnNav {
+        display: none;
+    }
+
+    .menuHover:hover .btnNav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .menuHover {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: fit-content !important;
+        margin-right: 5%;
+        font-size: 10px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 74%;
+        border-radius: 10px;
+    }
+
+    .searchBar {
+        width: 80px;
+    }
+
+    div.logo {
+        font-size: 140%;
+    }
+
+    .sideBar1 {
+        background-color: #333333;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        /* float: left; */
+        font-size: 20px;
+    }
+
+    a.sideProfileLink1 {
+        text-decoration: none;
+        color: #fff;
+        font-size: 10px;
+    }
+
+    div.sideBar {
+        display: none;
+    }
+
+    div.mainContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #5A5A5A;
+        width: 100%;
+        height: 86%;
+        /* float: right; */
+    }
+
+    .navBar {
+        width: 100%;
+        height: 10%;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 90%;
+    }
+
+    div.feed {
+        width: 95%;
+        height: 65%;
+        margin: 0px 35px 0px 35px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px 250px 250px 250px 250px 250px;
+        gap: 20px;
+        overflow-y: scroll;
+    }
+
+    body.indexBody {
+        width: 100%;
+        height: 100vh;
+    }
+
+    /* Read Page */
+
+    .readContent {
+        width: 100%;
+        height: 100%;
+        margin-left: 4%;
+    }
+
+    .mainReadContent {
+        width: 90%;
+        height: 500px;
+    }
+
+    /* News outles */
+
+    .cardImage {
+        width: 100%;
+        height: 206.34px;
+
+    }
+
+    .imageNewsOutlets {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+}
+
+
+@media screen and (min-width: 850px) {
+    #burgerMenu {
+        display: none;
+    }
+
+    .imageNewsOutlets {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .imageOtherStories {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .card {
+        border-radius: 10px;
+    }
+
+    .sideBar1 {
+        display: none;
+
+    }
+}
+
+
+@media (max-width: 1336px) {
+    .menuHover {
+        width: 40%;
+    }
+}
+
+/* @media (min-width: 1660px) {
+    .mainContent {
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 20%;
+    }
+
+} */

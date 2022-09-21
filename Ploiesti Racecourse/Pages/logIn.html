@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- JavaScript -->
+    <script src="../JavaScript/logIn.js" defer></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/html" href="../Assets/CSS/style.css">
+    <link rel="stylesheet"  href="../Assets/CSS/logIn.css">
+
+    <!-- LESS Online -->
+    <!-- <link rel="stylesheet/less" type="text/css" href="../Assets/LESS/styles.less" />
+    <link rel="stylesheet/less" type="text/css" href="../Assets/LESS/logIn.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less@4" ></script> -->
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <title>Ploiesti Racecourse | Log In</title>
+</head>
+<body class="bodyLog">
+    <nav class="navLog">
+        <div class="logo">Ploiesti Racecourse</div>
+    </nav>
+
+    <div class="infoGet">
+        <form class="formStyle">
+            <div class="name">
+                <label for="name" class="nameLabel">Enter your name</label>
+                <input type="text" name="" id="name" class="nameInput">
+            </div>
+
+            <div class="mail">
+                <label for="mail" class="mailLabel">Enter your email</label>
+                <input type="email" name="" id="mail" class="mailInput">
+            </div>
+
+            <div class="pictureArea">
+                <label for="picture" class="pictureLabel">Enter your profile picture</label>
+                <input type="file" name="" class="editProfile__enterImage" id="picture" accept="image/jpg">
+            </div>
+
+            <div>
+                <input type="button" value="Log In" class="btn" id="btnLogIn" onclick="LogIn()">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,434 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #000;
+  display: grid;
+  grid-auto-rows: auto;
+}
+.navBar {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 15px 0 auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 15px;
+  z-index: 10;
+}
+.navBar .containerLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 60px;
+  width: auto;
+}
+.navBar .containerLinks .homeLink,
+.navBar .containerLinks .projectsLink,
+.navBar .containerLinks .contactLink {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Major Mono Display', monospace;
+  font-weight: 700;
+  transition: all 1.5s ease-in-out;
+}
+.navBar .containerLinks .homeLink:hover {
+  transform: translateY(-10px);
+  text-shadow: 1px 1px 5px #fff;
+}
+.navBar .containerLinks .projectsLink:hover {
+  transform: translateX(-10px);
+  text-shadow: 1px 1px 5px #fff;
+}
+.navBar .containerLinks .contactLink:hover {
+  transform: translateY(10px);
+  text-shadow: 1px 1px 5px #fff;
+}
+.containerInfo {
+  width: 50%;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.containerInfo .name {
+  color: #fff;
+  font-family: 'Megrim', cursive;
+  font-variant: small-caps;
+  font-size: 50px;
+  transition: all 3s ease-in-out;
+  opacity: 0%;
+}
+.containerInfo .profession {
+  color: #fff;
+  font-family: 'Iceberg', cursive;
+  transition: all 3s ease-in-out;
+  opacity: 0%;
+}
+.containerInfo .about {
+  color: #fff;
+  font-family: 'Share Tech Mono', monospace;
+  transition: all 3s ease-in-out;
+  opacity: 0%;
+}
+.containerInfo .pieces {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.containerInfo .pieces .square1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: none;
+  border: 1px solid #fff;
+  transform: translate(-60px, -70px);
+  transition: all 2s ease-in-out;
+}
+.containerInfo .pieces .square1 .code {
+  font-size: 30px;
+  color: #fff;
+}
+.containerInfo .pieces .square2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: none;
+  border: 1px solid #fff;
+  transform: translate(60px, 70px);
+  transition: all 2s ease-in-out;
+}
+.containerInfo .pieces .square2 .microchip {
+  font-size: 30px;
+  color: #fff;
+}
+.containerInfo .pieces .square3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: none;
+  border: 1px solid #fff;
+  transform: translate(-90px, 100px);
+  transition: all 2s ease-in-out;
+}
+.containerInfo .pieces .square3 .brain {
+  font-size: 30px;
+  color: #fff;
+}
+.containerInfo .pieces .square4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: none;
+  border: 1px solid #fff;
+  transform: translate(120px, -70px);
+  transition: all 2s ease-in-out;
+}
+.containerInfo .pieces .square4 .eyes {
+  font-size: 30px;
+  color: #fff;
+}
+.containerInfo .pieces .square5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: none;
+  border: 1px solid #fff;
+  transform: translate(-60px, -60px);
+  transition: all 2s ease-in-out;
+}
+.containerInfo .pieces .square5 .music {
+  font-size: 30px;
+  color: #fff;
+}
+.containerInfo .pieces .square6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: none;
+  border: 1px solid #fff;
+  transform: translate(-20px, 100px);
+  transition: all 2s ease-in-out;
+}
+.containerInfo .pieces .square6 .smile {
+  font-size: 30px;
+  color: #fff;
+}
+.containerInfo .pieces .square7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: none;
+  border: 1px solid #fff;
+  transform: translate(-40px, 50px);
+  transition: all 2s ease-in-out;
+}
+.containerInfo .pieces .square7 .laptop {
+  font-size: 30px;
+  color: #fff;
+}
+.containerInfo .pieces .square8 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: none;
+  border: 1px solid #fff;
+  transform: translate(-100px, -150px);
+  transition: all 2s ease-in-out;
+}
+.containerInfo .pieces .square8 .people {
+  font-size: 30px;
+  color: #fff;
+}
+.containerInfo .pieces .square9 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: none;
+  border: 1px solid #fff;
+  transform: translate(123px, 44px);
+  transition: all 2s ease-in-out;
+}
+.containerInfo .pieces .square9 .bugs {
+  font-size: 30px;
+  color: #fff;
+}
+.assemble {
+  position: absolute;
+  width: 200px;
+  top: 10px;
+  left: 44%;
+  transition: all 2s ease-out;
+}
+.assemble .btnAssemble {
+  width: 200px;
+  height: 50px;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.7s ease-in-out;
+}
+.assemble .btnAssemble:hover {
+  border-radius: 20px;
+  box-shadow: 1px 1px 6px #fff;
+}
+.continueArrow {
+  cursor: pointer;
+  margin: 30px auto;
+}
+.continueArrow .icon {
+  width: 40px;
+  height: 40px;
+  animation-name: pulse;
+  animation-timing-function: linear;
+  animation-duration: 1.3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  color: #fff;
+}
+@keyframes pulse {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+    filter: drop-shadow(0px 0px 6px #fff);
+  }
+}
+.followMouse {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #fff;
+  z-index: -100;
+}
+.projectsHeader {
+  width: 50%;
+  margin: 25px auto;
+}
+.projectsHeader .titleProject {
+  color: #fff;
+  font-family: 'Iceberg', cursive;
+  text-align: center;
+  margin: 10px 0px;
+  font-size: 40px;
+}
+.projectParent {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.projectParent .projectParent_numberOne {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.projectParent .projectParent_numberOne .numberOne_image {
+  width: 50%;
+  height: 200px;
+  border-radius: 20px;
+}
+.projectParent .projectParent_numberOne .numberOne_text {
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  width: 80%;
+  font-family: 'Share Tech Mono', monospace;
+}
+.projectParent .projectParent_numberOne .numberOne_btns {
+  margin-top: 15px;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.projectParent .projectParent_numberOne .numberOne_btns .btnThisBrowser {
+  padding: 10px;
+  height: 35px;
+  border-radius: 20px;
+  box-shadow: 0px 1px 4px #fff;
+  background: linear-gradient(160deg, #00FF23, #00A917, #006F0F);
+  color: #fff;
+  border: none;
+}
+.projectParent .projectParent_numberOne .numberOne_btns .btnNewBrowser {
+  padding: 10px;
+  height: 35px;
+  border-radius: 20px;
+  box-shadow: 0px 1px 4px #fff;
+  background: linear-gradient(160deg, #00FF23, #00A917, #006F0F);
+  color: #fff;
+  border: none;
+  text-decoration: none;
+}
+.projectParent .projectParent_numberOne .numberOne_titlePloiesti {
+  margin-top: 10px;
+  color: #fff;
+  font-family: 'Iceberg', cursive;
+  text-align: center;
+  background: linear-gradient(160deg, #C70039, #900C3F, #581845);
+  -moz-background-clip: text;
+  -moz-color-fill: transparent;
+  -webkit-background-clip: text;
+  -webkit-color-fill: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.projectParent .projectParent_numberOne .numberOne_titleSpaceBook {
+  margin-top: 10px;
+  color: #fff;
+  font-family: 'Iceberg', cursive;
+  text-align: center;
+  background: linear-gradient(160deg, #01B0E3, #027EA2, #00495F);
+  -moz-background-clip: text;
+  -moz-color-fill: transparent;
+  -webkit-background-clip: text;
+  -webkit-color-fill: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.projectParent .projectParent_numberOne .numberOne_titleTravelAgency {
+  margin-top: 10px;
+  color: #fff;
+  font-family: 'Iceberg', cursive;
+  text-align: center;
+  background: linear-gradient(160deg, #EA1900, #A61200, #6C0B00);
+  -moz-background-clip: text;
+  -moz-color-fill: transparent;
+  -webkit-background-clip: text;
+  -webkit-color-fill: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.projectParent .projectParent_numberOne .numberOne_titleNewsOutlet {
+  margin-top: 10px;
+  color: #fff;
+  font-family: 'Iceberg', cursive;
+  text-align: center;
+  background: linear-gradient(160deg, #E0E0E0, #B7B7B7, #939393);
+  -moz-background-clip: text;
+  -moz-color-fill: transparent;
+  -webkit-background-clip: text;
+  -webkit-color-fill: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.projectParent .projectParent_numberOne .numberOne_titleCreatingUsers {
+  margin-top: 10px;
+  color: #fff;
+  font-family: 'Iceberg', cursive;
+  text-align: center;
+  background: linear-gradient(160deg, #00FCF4, #00A29D, #006E6B);
+  -moz-background-clip: text;
+  -moz-color-fill: transparent;
+  -webkit-background-clip: text;
+  -webkit-color-fill: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.projectParent .iframe {
+  width: 50%;
+  height: 500px;
+}
+@media (max-width: 1150px) {
+  .projectParent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

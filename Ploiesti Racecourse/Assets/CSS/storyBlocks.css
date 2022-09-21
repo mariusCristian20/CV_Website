@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 7%;
+  border-top: 2px solid #DFDFDF;
+  text-align: center;
+}
+.coverAll {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: none;
+}
+.coverAll .cover {
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+}
+.headingStory {
+  text-align: center;
+  background: linear-gradient(160deg, #C70039, #900C3F, #581845);
+  -moz-background-clip: text;
+  -moz-color-fill: transparent;
+  -webkit-background-clip: text;
+  -webkit-color-fill: transparent;
+  background-clip: text;
+  color: transparent;
+  font-family: 'Kaushan Script', cursive;
+  margin: 20px 0px;
+  font-size: 45px;
+}
+.storyBlocks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 0 2%;
+  gap: 10px;
+}
+.storyBlocks .storyOne,
+.storyBlocks .storyTwo,
+.storyBlocks .storyThree,
+.storyBlocks .storyFour {
+  text-align: center;
+  padding: 5px;
+  background-color: #C70039;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  color: #DFDFDF;
+  font-family: 'Noto Sans', sans-serif;
+}
+.storyBlocks .storyOne:hover,
+.storyBlocks .storyTwo:hover,
+.storyBlocks .storyThree:hover,
+.storyBlocks .storyFour:hover {
+  box-shadow: 1px 1px 18px #581845;
+  border-radius: 20px;
+}
+.storyBlocks .storyOne .btnRead,
+.storyBlocks .storyTwo .btnRead,
+.storyBlocks .storyThree .btnRead,
+.storyBlocks .storyFour .btnRead {
+  background-color: #581845;
+  border: none;
+  box-shadow: 1px 1px 12px #581845;
+  font-family: 'Noto Sans', sans-serif;
+  color: #fff;
+  margin: 5px 0px;
+  padding: 5px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.storyBlocks .storyOne .btnRead:hover,
+.storyBlocks .storyTwo .btnRead:hover,
+.storyBlocks .storyThree .btnRead:hover,
+.storyBlocks .storyFour .btnRead:hover {
+  border-radius: 20px;
+  box-shadow: 1px 1px 24px #581845;
+  cursor: pointer;
+}
+.firstStory {
+  margin: 0 30%;
+  width: 540px;
+  height: 350px;
+  background-color: #C70039;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 20px;
+  position: fixed;
+  z-index: 200;
+  bottom: 0;
+  color: #DFDFDF;
+  font-family: 'Noto Sans', sans-serif;
+  display: none;
+}
+.firstStory .close {
+  position: absolute;
+  right: 20px;
+  color: #F2F2F2;
+  cursor: pointer;
+}
+.firstStory .close:hover {
+  color: #fff;
+  text-shadow: 1px 1px 12px #fff;
+}
+.firstStory .imageContainer {
+  width: 30%;
+  height: 100px;
+  border-radius: 20px;
+}
+@media (max-width: 600px) {
+  .storyBlocks {
+    grid-template-columns: 1fr;
+  }
+  .firstStory {
+    width: 60% !important;
+    margin: 0% 30%;
+  }
+}
+@media (max-width: 500px) {
+  .headingStory {
+    font-size: 39px;
+  }
+  .firstStory {
+    width: 80% !important;
+    margin: 0% 10%;
+  }
+}
+@media (max-width: 400px) {
+  .headingStory {
+    font-size: 30px;
+  }
+  .storyOne,
+  .storyTwo,
+  .storyThree,
+  .storyFour {
+    font-size: small;
+  }
+}
+@media (max-width: 1000px) {
+  .firstStory {
+    width: 540px;
+  }
+}
+@media (max-width: 800px) {
+  .firstStory {
+    width: 50%;
+  }
+}

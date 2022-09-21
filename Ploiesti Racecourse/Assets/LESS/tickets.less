@@ -1,0 +1,137 @@
+@import "../LESS/styles.less";
+
+.tickets {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    margin: 0 auto;
+    width: -moz-fit-content;
+    width: fit-content;
+    gap: 20px;
+
+    .tickets__kids,
+    .tickets__students,
+    .tickets__family,
+    .tickets__retiremente {
+        width: 300px;
+        height: 248px;
+        .flexArangement(column, center);
+        font-family: 'Kaushan Script', cursive;
+        color: #f8f8f8;
+        text-shadow: 1px 1px 12px #000;
+        border-radius: 20px;
+        background-color: #750928;
+    }
+
+
+    .tickets__kids:hover .tickets__kids--background{
+        background-size: 450px;
+        opacity: 75%;
+    }
+    .tickets__retiremente:hover .tickets__retiremente--background {
+        background-size: 450px;
+        opacity: 75%;
+    }
+
+    .tickets__family:hover .tickets__family--background{
+        background-size: 450px;
+        opacity: 75%;
+    }
+
+    .tickets__students:hover .tickets__students--background{
+        background-size: 450px;
+        opacity: 75%;
+    }
+
+    .tickets__kids--background {
+        .ticketsMixin(url(../Images/tickets.jpg));
+        transition: all 1s ease-in-out;
+        height: 245px;
+        width: 100.4%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .tickets__kidsText, .tickets__retirementeText, .tickets__familyText, .tickets__studentsText{
+        display: grid;
+        grid-template-columns: 190px 110px;
+        grid-template-rows: 40px 40px;
+    }
+
+    .kidsText, .retirementeText, .studentsText{
+        grid-column: 1 / 2;
+        margin-top: 4%;
+        margin-left: 2.1%;
+    }
+
+    .familyText{
+        grid-column: 1 / 2;
+        margin-top: 4%;
+        margin-left: 1%;
+    }
+
+    .headingKidsT, .headingRetirementeT, .headingFamilyT{
+        margin-left: 10%;
+        transform: translateY(-17px);
+        font-size: 22px;
+    }
+
+    .headingFamilyT, .headingStudentsT{
+        margin-left: 10%;
+        transform: translateY(-17px);
+        font-size: 22px;
+    }
+
+    .tickets__retiremente--background {
+        .ticketsMixin(url(../Images/fence\ horses.jpg));
+        transition: all 1s ease-in-out;
+        height: 245px;
+        width: 100.4%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+
+    .tickets__family--background {
+        .ticketsMixin(url(../Images/horse\ with\ calf.jpg));
+        transition: all 1s ease-in-out;
+        height: 245px;
+        width: 100.4%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .tickets__students--background {
+        .ticketsMixin(url(../Images/horse10.jpg));
+        transition: all 1s ease-in-out;
+        height: 245px;
+        width: 100.4%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .tickets__kids_btn,
+    .tickets__students_btn,
+    .tickets__family_btn,
+    .tickets__retirement_btn {
+        border-radius: 30%;
+        border-color: #fff;
+        font-family: 'Kaushan Script', cursive;
+        width: 50%;
+        margin-left: 38%;
+        margin-right: 12%;
+        margin-bottom: 5%;
+        grid-column: 2 / 3;
+    }
+}
+
+@media (max-width: 1277px) {
+    .tickets{
+        grid-template-columns: repeat(2, 300px);
+    }
+}
+
+@media (max-width: 700px) {
+    .tickets {
+        grid-template-columns: 300px;
+    }
+}

@@ -1,0 +1,76 @@
+@import "../LESS/styles.less";
+
+.container {
+    .gridArangement();
+}
+
+.calculator {
+    grid-column: 2 / 3;
+    text-align: @alignText;
+    background-color: blue;
+    border-radius: 20px;
+
+    .divResult {
+        .flexArangement(column, center);
+    }
+
+    .operators {
+        .flexArangement(row, center);
+    }
+
+
+    .result {
+        .style(95%, 40px, white, 20px, 23px);
+        .flexArangement(column, center);
+    }
+
+    .numbers {
+        .flexArangement(column, space-between);
+        margin-top: 20px;
+        height: 50px;
+    }
+
+    .info {
+        .flexArangement(row, center);
+
+        .infoBtn {
+            .style(50%, 30px, cyan, 10px, 15px);
+            .flexArangement(column, center);
+        }
+    }
+
+    .btns {
+        .flexArangement(row, space-evenly);
+
+        .resultBTN {
+            .style(25%, 20px, #15ff00, 13px, 15px);
+            padding: 15px;
+            .flexArangement(column, center);
+
+            &:hover {
+                box-shadow: 1px 1px 12px #15ff00;
+            }
+        }
+
+        .resetAllBTN {
+            .style(25%, 20px, #15ff00, 13px, 15px);
+            padding: 15px;
+            .flexArangement(column, center);
+
+            &:hover {
+                box-shadow: 1px 1px 12px #15ff00;
+            }
+        }
+
+        .resetBTN {
+            .style(25%, 20px, #15ff00, 13px, 15px);
+            padding: 15px;
+            .flexArangement(column, center);
+
+            &:hover {
+                box-shadow: 1px 1px 12px #15ff00;
+            }
+        }
+    }
+
+}

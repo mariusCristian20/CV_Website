@@ -1,0 +1,81 @@
+.navbar-brand {
+    font-family: 'Satisfy', cursive;
+    font-weight: 900;
+    color: #C40D0D !important;
+}
+
+/* titles */
+.gallery,
+.features,
+.write {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* articles */
+.waterFall,
+.cottage,
+.jiului,
+.peles {
+    color: #5C5D5C;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.cottage {
+    border-right: 2px solid #EDEDED;
+}
+
+.jiului {
+    border-right: 2px solid #EDEDED;
+    border-top: 2px solid #EDEDED;
+}
+
+.peles {
+    border-top: 2px solid #EDEDED;
+}
+
+/* features */
+.plane,
+.map,
+.clock,
+.face {
+    border-right: 2px solid #EDEDED;
+}
+
+.atom,
+.clock,
+.face {
+    border-top: 2px solid #EDEDED;
+}
+
+.smallTitle {
+    font-weight: bolder;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+
+.moreInfo {
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-align: center;
+}
+
+@media(max-width: 575px) {
+
+    .cottage,
+    .jiului,
+    .peles {
+        border: none;
+    }
+
+    .plane,
+    .map,
+    .clock,
+    .face {
+        border: none;
+    }
+
+    .atom,
+    .clock,
+    .face {
+        border: none;
+    }
+}

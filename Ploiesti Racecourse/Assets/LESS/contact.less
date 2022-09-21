@@ -1,0 +1,147 @@
+@import "../LESS/styles.less";
+
+.map {
+    margin: 20px auto;
+
+    .map__info {
+        .flexArangement(row, center);
+        gap: 10px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width: 100%;
+    }
+}
+
+.helpBtnMap{
+    white-space: nowrap; 
+    text-align: center; 
+    width: 100%; 
+    padding: 6px 0;
+}
+
+.contact {
+    width: 50%;
+    margin: 10px auto;
+    .flexArangement(column, center);
+
+    .contact__heading {
+        .mixinTitle();
+        font-family: 'Kaushan Script', cursive;
+    }
+
+    .contact__text1 {
+        margin: 15px 0px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .contact__text2 {
+        margin: 15px 0px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .contact__text3 {
+        margin: 15px 0px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
+@media (max-width: 1100px) {
+    .iframeMap{
+        width: 400px;
+        height: 300px;
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+    .map {
+        width: 500px;
+    }
+    .map__info {
+        .flexArangement(column, center) !important;
+    }
+    .contact {
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px){
+    .iframeMap{
+        width: 400px;
+        height: 300px;
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+    .map {
+        width: 500px;
+    }
+    .map__info {
+        .flexArangement(column, center) !important;
+    }
+
+    .contact {
+        width: 75%;
+    }
+}
+
+// @media (max-width: 520px) {
+//     .iframeMap {
+//         width: 300px;
+//         height: 200px;
+//         margin-left: 12%;
+//         margin-right: 12%;
+//     }
+
+//     .map {
+//         width: 400px;
+//     }
+
+//     .map__info {
+//         .flexArangement(column, center) !important;
+//     }
+// }
+
+@media (max-width: 520px) {
+    .iframeMap {
+        width: 250px;
+        height: 150px;
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+
+    .map {
+        width: 300px;
+    }
+
+    .map__info {
+        .flexArangement(column, center) !important;
+        font-size: small;
+    }
+
+    .contact {
+        width: 75%;
+    }
+}
+
+@media (max-width: 300px) {
+    .iframeMap {
+        width: 150px;
+        height: 150px;
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+
+    .map {
+        width: 200px;
+    }
+
+    .map__info {
+        .flexArangement(column, center) !important;
+        font-size: 10px;
+    }
+
+    .helpBtnMap{
+        font-size: small;
+    }
+
+    .contact {
+        width: 75%;
+    }
+}

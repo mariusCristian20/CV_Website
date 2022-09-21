@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 7%;
+  border-top: 2px solid #DFDFDF;
+  text-align: center;
+}
+.headingGames {
+  text-align: center;
+  background: linear-gradient(160deg, #C70039, #900C3F, #581845);
+  -moz-background-clip: text;
+  -moz-color-fill: transparent;
+  -webkit-background-clip: text;
+  -webkit-color-fill: transparent;
+  background-clip: text;
+  color: transparent;
+  font-family: 'Kaushan Script', cursive;
+  margin: 20px 0px;
+  font-size: 45px;
+}
+.racecourse {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.racecourse .panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 110px;
+  background-color: #58061e;
+  border-radius: 10px;
+  padding: 10px;
+}
+.racecourse .panel .congrats {
+  width: 100%;
+  height: 30px;
+  font-family: 'Press Start 2P', cursive;
+  color: #fff;
+  font-size: larger;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  animation-name: glow;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes glow {
+  from {
+    text-shadow: none;
+  }
+  to {
+    text-shadow: 1px 1px 15px #fff;
+  }
+}
+.racecourse .panel .panelDistance {
+  width: 100%;
+  height: 30px;
+  font-family: 'Press Start 2P', cursive;
+  color: #fff;
+  font-size: larger;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.racecourse .panel .panelDistance .distance {
+  width: 80px;
+}
+.racecourse .panel .panelOPDistance {
+  width: 100%;
+  height: 30px;
+  font-family: 'Press Start 2P', cursive;
+  color: #fff;
+  font-size: larger;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.racecourse .panel .panelOPDistance .distance {
+  width: 80px;
+}
+.racecourse .playSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #58061e;
+  margin-top: 10px;
+  font-family: 'Press Start 2P', cursive;
+  color: #fff;
+  font-size: small;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 20px;
+  height: 300px;
+}
+.racecourse .playSection .difficultyBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.racecourse .playSection .playText {
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.racecourse .playSection .playBtn {
+  padding: 5px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  border-radius: 10px;
+  border-color: #fff;
+  margin: 10px 0px;
+}
+.racecourse .playSection .mbtnRun {
+  display: none;
+}
+.racecourse .playSection .hbtnRun {
+  display: none;
+}
+.racecourse .playSection .playDiffBtn {
+  padding: 5px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  border-radius: 10px;
+  border-color: #fff;
+  margin: 10px 0px;
+}
+.racecourse .playSection .mPlayDiff {
+  display: none;
+}
+.racecourse .playSection .hPlayDiff {
+  display: none;
+}
+.racecourse .containerCourse {
+  width: 560px;
+}
+.racecourse .courseTrack {
+  width: 550px;
+  background-image: url(../Images/race\ track.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.racecourse .courseTrack .firstHorseE {
+  background-image: url(../Images/running_horse.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+  transition: all 0.6s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.racecourse .courseTrack .secondHorseE {
+  background-image: url(../Images/running_horse.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+  transition: all 0.6s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+@media (max-width: 860px) {
+  .playSection {
+    width: 85%;
+  }
+}
+@media (max-width: 530px) {
+  .panel {
+    width: 87% !important;
+    line-height: 20px;
+    height: 150px !important;
+  }
+}
+@media (max-width: 600px) {
+  .containerCourse {
+    width: 85% !important;
+    overflow-x: auto;
+  }
+}
+@media (max-width: 500px) {
+  .headingGames {
+    font-size: 39px;
+  }
+}
+@media (max-width: 400px) {
+  .headingGames {
+    font-size: 30px;
+  }
+}

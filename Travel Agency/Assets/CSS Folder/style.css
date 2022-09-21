@@ -1,0 +1,77 @@
+/* @import "header.css"; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: aqua; */
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 25px 1fr 1fr 20px 1fr 1fr .4fr 1fr .4fr 1fr 1fr .3fr .4fr 1fr 1fr 150px;
+    grid-template-areas:
+        "header header header header"
+        ".      .       .       ."
+        "greetings greetings greetings greetings"
+        "greetings greetings greetings greetings"
+        ".      .       .       ."
+        "containerArticles containerArticles containerArticles containerArticles"
+        "containerArticles containerArticles containerArticles containerArticles"
+        /* "containerArticles containerArticles containerArticles containerArticles"
+        "containerArticles containerArticles containerArticles containerArticles" */
+        "gallery gallery gallery gallery"
+        ". fixedwidth fixedwidth ."
+        "headingFeatures headingFeatures headingFeatures headingFeatures"
+        "sectFeature sectFeature sectFeature sectFeature"
+        "sectFeature sectFeature sectFeature sectFeature"
+        ".          .           .           ."
+        "headingWrite headingWrite headingWrite headingWrite"
+        "containerForm containerForm containerForm containerForm"
+        "containerForm containerForm containerForm containerForm"
+        "footerContainer footerContainer footerContainer footerContainer";
+}
+
+.footerContainer {
+    grid-area: footerContainer;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 2px solid #EDEDED;
+}
+
+
+
+@media(max-width: 600px) {
+    body {
+        grid-template-rows: 50px 25px .35fr .35fr 20px 1fr 1fr .1fr .2fr .1fr .25fr .25fr .05fr .1fr .25fr .25fr 150px;
+    }
+}
+
+@media(min-width:600px) and (max-width: 950px) {
+    body {
+        grid-template-rows: 50px 25px .5fr .3fr 20px .6fr .6fr .1fr .2fr .1fr .25fr .25fr .05fr .1fr .25fr .25fr 150px;
+    }
+
+    .hoverable {
+        display: block;
+    }
+
+
+}
+
+@media(min-width: 951px) {
+    body {
+        grid-template-rows: 50px 25px .5fr .3fr 20px .6fr .6fr .1fr .2fr .1fr .25fr .25fr .05fr .1fr .25fr .25fr 150px;
+    }
+
+    .hoverable {
+        display: none;
+    }
+
+}

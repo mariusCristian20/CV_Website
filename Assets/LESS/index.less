@@ -1,0 +1,252 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+// variables
+
+// mixin
+.linksStyling(){
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Major Mono Display', monospace;
+    font-weight: 700;
+}
+.flexArangement(@justifyContent, @flexDirection){
+    display: flex;
+    flex-direction: @flexDirection;
+    justify-content: @justifyContent;
+    align-items: center;
+}
+.infoStyling(@fontFamily, @fontStyle){
+    color: #fff;
+    font-family: @fontFamily, @fontStyle;
+    transition: all 3s ease-in-out;
+    opacity: 0%;
+}
+.titlesStyling(@fontFamily, @fontStyle){
+    color: #fff;
+    font-family: @fontFamily, @fontStyle;
+    text-align: center;
+}
+.squareStyling(@xPos, @yPos){
+    width: 50px;
+    height: 50px;
+    background-color: none;
+    border: 1px solid #fff;
+    transform: translate(@xPos,@yPos) ;
+    transition: all 2s ease-in-out;
+}
+.stylingIcons(){
+    font-size: 30px;
+    color: #fff;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #000;
+    display: grid;
+    grid-auto-rows: auto;
+}
+
+.navBar{
+    width: -moz-fit-content;
+    width: fit-content;
+    height: auto;
+    .flexArangement(center, row);
+    margin: 15px 15px 0 auto;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 15px;
+    z-index: 10;
+
+    .containerLinks{
+        .flexArangement(space-evenly, column);
+        height: 60px;
+        width: auto;
+
+        .homeLink, .projectsLink, .contactLink{
+            .linksStyling();
+            transition: all 1.5s ease-in-out;
+        }
+        .homeLink:hover{
+            transform: translateY(-10px);
+            text-shadow: 1px 1px 5px #fff;
+        }
+        .projectsLink:hover{
+            transform: translateX(-10px);
+            text-shadow: 1px 1px 5px #fff;
+        }
+        .contactLink:hover{
+            transform: translateY(10px);
+            text-shadow: 1px 1px 5px #fff;
+        }
+    }
+}
+
+.containerInfo{
+    width: 50%;
+    height: 500px;
+    margin: 0 auto;
+    .flexArangement(space-evenly, column);
+    text-align: center;
+    position: relative;
+
+    .name{
+        color: #fff;
+        font-family: 'Megrim', cursive;
+        font-variant: small-caps;
+        font-size: 50px;
+        transition: all 3s ease-in-out;
+        opacity: 0%;
+    }
+    .profession{
+        .infoStyling('Iceberg', cursive);
+    }
+    .about{
+        .infoStyling('Share Tech Mono', monospace);
+    }
+
+    .pieces{
+        position: absolute;
+        .flexArangement(center, row);
+
+        .square1{
+            .flexArangement(center, column);
+            .squareStyling(-60px, -70px);
+
+            .code{
+                .stylingIcons();
+            }
+        }
+        .square2{
+            .flexArangement(center, column);
+            .squareStyling(60px, 70px);
+
+            .microchip{
+                .stylingIcons();
+            }
+        }
+        .square3{
+            .flexArangement(center, column);
+            .squareStyling(-90px, 100px);
+
+            .brain{
+                .stylingIcons();
+            }
+        }
+        .square4{
+            .flexArangement(center, column);
+            .squareStyling(120px, -70px);
+
+            .eyes{
+                .stylingIcons();
+            }
+        }
+        .square5{
+            .flexArangement(center, column);
+            .squareStyling(-60px, -60px);
+
+            .music{
+                .stylingIcons();
+            }
+        }
+        .square6{
+            .flexArangement(center, column);
+            .squareStyling(-20px, 100px);
+
+            .smile{
+                .stylingIcons();
+            }
+        }
+        .square7{
+            .flexArangement(center, column);
+            .squareStyling(-40px, 50px);
+
+            .laptop{
+                .stylingIcons();
+            }
+        }
+        .square8{
+            .flexArangement(center, column);
+            .squareStyling(-100px, -150px);
+
+            .people{
+                .stylingIcons();
+            }
+        }
+        .square9{
+            .flexArangement(center, column);
+            .squareStyling(123px, 44px);
+            
+            .bugs{
+                .stylingIcons();
+            }
+        }
+    }
+}
+
+.assemble{
+    position: absolute;
+    width: 200px;
+    top: 10px;
+    left: 44%;
+    // right: 42.56%;
+    transition: all 2s ease-out;
+
+    .btnAssemble{
+        width: 200px;
+        height: 50px;
+        background: none;
+        border: 1px solid #fff;
+        color: #fff;
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 15px;
+        cursor: pointer;
+        transition: all .7s ease-in-out;
+
+        &:hover{
+            border-radius: 20px;
+            box-shadow: 1px 1px 6px #fff;
+        }
+    }
+}
+
+.continueArrow{
+    cursor: pointer;
+    margin: 30px auto;
+
+    .icon{
+        width: 40px;
+        height: 40px;
+        animation-name: pulse;
+        animation-timing-function: linear;
+        animation-duration: 1.3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        color: #fff;
+    }
+}
+@keyframes pulse{
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+            filter: drop-shadow(0px 0px 6px #fff);
+    }
+}
+
+
+.followMouse{
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #fff;
+    z-index: -100;
+    // transition: all .05s ease-in-out;
+}

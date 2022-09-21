@@ -1,0 +1,41 @@
+@import "../LESS/styles.less";
+
+// About.html
+
+.gallery {
+    .flexArangement(row, center);
+    gap: 15px;
+    margin-top: 15px;
+
+    .gallery__race1,
+    .gallery__race2 {
+        width: 40%;
+    }
+}
+
+.history {
+    width: 84%;
+    margin: 13px auto;
+
+    .history__heading {
+        text-align: center;
+        margin-bottom: 15px;
+        .mixinTitle();
+        font-family: 'Kaushan Script', cursive;
+    }
+
+    .history__text1,
+    .history__text2,
+    .history__text3,
+    .history__text4,
+    .history__text5,
+    .history__text6,
+    .history__text7,
+    .history__text8,
+    .history__text9,
+    .history__text10,
+    .history__text11 {
+        margin: 10px 0px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}

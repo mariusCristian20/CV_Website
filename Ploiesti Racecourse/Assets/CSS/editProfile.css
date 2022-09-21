@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 7%;
+  border-top: 2px solid #DFDFDF;
+  text-align: center;
+}
+.coverEditProfile {
+  width: 100%;
+  height: 100vh;
+  background-color: #00000080;
+  position: fixed;
+  display: none;
+}
+.coverEditProfile .editProfile {
+  position: relative;
+  top: 4%;
+  margin: 0 auto;
+  width: 540px;
+  height: 550px;
+  border-radius: 5%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  transform: translateY(-550px);
+  transition: all 2s ease-in-out;
+}
+.coverEditProfile .editProfile .editProfile__heading {
+  background: linear-gradient(160deg, #C70039, #900C3F, #581845);
+  -moz-background-clip: text;
+  -moz-color-fill: transparent;
+  -webkit-background-clip: text;
+  -webkit-color-fill: transparent;
+  background-clip: text;
+  color: transparent;
+  font-family: 'Kaushan Script', cursive;
+  text-align: center;
+  width: 150px;
+}
+.coverEditProfile .editProfile .editProfile__editName {
+  font-weight: 500;
+  margin: 10px 0px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.coverEditProfile .editProfile .editProfile__enterName {
+  padding: 5px;
+  text-align: center;
+  border-radius: 20%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.coverEditProfile .editProfile .editProfile__editMail {
+  font-weight: 500;
+  margin: 10px 0px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.coverEditProfile .editProfile .editProfile__enterMail {
+  padding: 5px;
+  text-align: center;
+  border-radius: 20%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.coverEditProfile .editProfile .editProfile__editProfilePicture {
+  font-weight: 500;
+  margin: 10px 0px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.picture{
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+.coverEditProfile .editProfile .editProfile__enterImage {
+  padding: 5px;
+  text-align: center;
+  border-radius: 20%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.coverEditProfile .editProfile .editProfile__btn {
+  padding: 5px;
+  border-radius: 12px;
+  border: none;
+  background-color: #C70039;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.coverEditProfile .editProfile .editProfile__headingProfile {
+  margin: 10px 0px;
+}
+.coverEditProfile .editProfile .editProfile__name {
+  font-weight: 500;
+  margin: 10px 0px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.coverEditProfile .editProfile .editProfile__showName {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.coverEditProfile .editProfile .editProfile__mail {
+  font-weight: 500;
+  margin: 10px 0px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.coverEditProfile .editProfile .editProfile__showMail {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.coverEditProfile .editProfile .editProfile__picture {
+  font-weight: 500;
+  margin: 10px 0px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.coverEditProfile .editProfile .close {
+  position: absolute;
+  right: 30px;
+  top: 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+@media (max-width: 700px) {
+  .editProfile {
+    width: 440px !important;
+  }
+}
+@media (max-width: 500px) {
+  .editProfile {
+    width: 340px !important;
+  }
+}
+@media (max-width: 400px) {
+  .editProfile {
+    width: 270px !important;
+  }
+}

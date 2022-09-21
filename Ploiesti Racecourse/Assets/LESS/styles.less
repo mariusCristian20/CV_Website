@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Variables
+@alignText: center;
+@wheight: 900;
+@fontStyle: italic;
+@border: 1.5px solid #DFDFDF;
+@borderRadius: 20px;
+
+
+// Mixins
+.gridArangement() {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 500px;
+}
+
+.gridGame2(){
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(2, 250px);
+}
+
+.flexArangement(@FlexDirection, @justifyContent) {
+    display: flex;
+    flex-direction: @FlexDirection;
+    justify-content: @justifyContent;
+    align-items: center;
+}
+
+.style(@width, @height, @backColor, @borderRad, @fontSize) {
+    width: @width;
+    height: @height;
+    background-color: @backColor;
+    border-radius: @borderRad;
+    text-align: @alignText;
+    font-size: @fontSize;
+}
+.colorAndFontFamily(){
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.mixinHorses(){
+    background-image: url(../Images/running_horse.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    transition: all .6s ease-in-out;
+}
+.mixinPanel(){
+    width: 100%;
+    height: 30px;
+    //background-color: #000;
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+    font-size: larger;
+    .flexArangement(row, center);
+}
+.mixinTitle(){
+    background: linear-gradient(160deg, #C70039, #900C3F, #581845);
+    -moz-background-clip: text;
+    -moz-color-fill: transparent;
+    -webkit-background-clip: text;
+    -webkit-color-fill: transparent;
+    background-clip: text;
+    color: transparent;
+}
+.ticketsMixin(@backgroundImage){
+    background-image: @backgroundImage;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 350px;
+}
+.editProfile(){
+    font-weight: 500;
+    margin: 10px 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.editProfile_enter(){
+    padding: 5px;
+    text-align: center;
+    border-radius: 20%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.footer{
+    .flexArangement(column, space-between);
+    margin-top: 7%;
+    border-top: 2px solid#DFDFDF;
+    text-align: center;
+}
+

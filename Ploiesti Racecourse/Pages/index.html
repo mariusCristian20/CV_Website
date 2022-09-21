@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- JavaScript -->
+    <script src="../JavaScript/index.JS" defer></script>
+    <script src="../JavaScript/calculator.js" defer></script>
+    <script src="../JavaScript/popUp.js" defer></script>
+    <script src="../JavaScript/carousel.js" defer></script>
+    <script src="../JavaScript/logIn.js" defer></script>
+    <script src="../JavaScript/horseRace.js" defer></script>
+    <script src="../JavaScript/macthingImages.js" defer></script>
+    <script src="../JavaScript/bet.js" defer></script>
+    <script src="../JavaScript/profile.js" defer></script>
+    <script src="../JavaScript/buyTickets.js" defer></script>
+    <script src="../JavaScript/editProfile.js" defer></script>
+    <script src="../JavaScript/hiddenNav.js" defer></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../Assets/Font Awesome/fontawesome-free-6.1.1-web/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../Assets/CSS/about.css">
+    <link rel="stylesheet" type="text/css" href="../Assets/CSS/betSection.css">
+    <link rel="stylesheet" type="text/css" href="../Assets/CSS/calculator.css">
+    <link rel="stylesheet" type="text/css" href="../Assets/CSS/carousel.css">
+    <link rel="stylesheet" type="text/css" href="../Assets/CSS/contact.css">
+    <link rel="stylesheet" type="text/css" href="../Assets/CSS/editProfile.css">
+    <link rel="stylesheet" type="text/css" href="../Assets/CSS/homePage.css">
+    <link rel="stylesheet" type="text/css" href="../Assets/CSS/horseRace.css">
+    <link rel="stylesheet" type="text/css" href="../Assets/CSS/logIn.css">
+    <link rel="stylesheet" type="text/css" href="../Assets/CSS/matchImages.css">
+    <link rel="stylesheet" type="text/css" href="../Assets/CSS/profile.css">
+    <link rel="stylesheet" type="text/css" href="../Assets/CSS/storyBlocks.css">
+    <link rel="stylesheet" type="text/html" href="../Assets/CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="../Assets/CSS/ticket.css">
+
+    <!-- LESS Online -->
+    <!-- <link rel="stylesheet/less" type="text/css" href="../Assets/LESS/styles.less" />
+    <link rel="stylesheet/less" type="text/css" href="../Assets/LESS/calculator.less" />
+    <link rel="stylesheet/less" type="text/css" href="../Assets/LESS/carousel.less" />
+    <link rel="stylesheet/less" type="text/css" href="../Assets/LESS/horseRace.less" />
+    <link rel="stylesheet/less" type="text/css" href="../Assets/LESS/storyBlocks.less" />
+    <link rel="stylesheet/less" type="text/css" href="../Assets/LESS/homePage.less" />
+    <link rel="stylesheet/less" type="text/css" href="../Assets/LESS/matchImages.less" />
+    <link rel="stylesheet/less" type="text/css" href="../Assets/LESS/tickets.less" />
+    <link rel="stylesheet/less" type="text/css" href="../Assets/LESS/betSection.less" />
+    <link rel="stylesheet/less" type="text/css" href="../Assets/LESS/profile.less" />
+    <link rel="stylesheet/less" type="text/css" href="../Assets/LESS/editProfile.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less@4" ></script> -->
+    
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Kaushan+Script&family=Noto+Sans:wght@600&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <title>Ploiesti Racecourse</title>
+</head>
+<body class="homeBody">
+
+    <div class="coverAll" id="coverAll">
+        <div class="cover"></div>
+    </div>
+
+    <nav class="navIndex">
+        <div class="containerLinks">
+            <ul class="navLinks">
+                <li class="linksLI"><a href="../Pages/index.html" class="btnLink">HOME</a></li>
+                <li class="linksLI"><a href="#games" class="btnLink">GAMES</a></li>
+                <li class="linksLI"><a href="#bets" class="btnLink">BETS</a></li>
+                <li class="linksLI"><a href="#tickets" class="btnLink">BUY TICKET</a></li>
+                <li class="linksLI"><a href="../Pages/contact.html" class="btnLink">CONTACT</a></li>
+                <li class="linksLI"><a href="../Pages/aboutUs.html" class="btnLink">ABOUT US</a></li>
+            </ul>
+        </div>
+
+        <a href="../Pages/index.html" class="logoLink"><div class="logoIndex">Ploiesti Racecourse</div></a>
+    </nav>
+
+    <div class="hiddenNav" id="hiddenNav">
+        <ul class="hiden_navLinks">
+                <li class="hidden__linksLI"><a href="../Pages/index.html" class="hidden__btnLink">HOME</a></li>
+                <li class="hidden__linksLI"><a href="#games" class="hidden__btnLink">GAMES</a></li>
+                <li class="hidden__linksLI"><a href="#bets" class="hidden__btnLink">BETS</a></li>
+                <li class="hidden__linksLI"><a href="#tickets" class="hidden__btnLink">BUY TICKET</a></li>
+                <li class="hidden__linksLI"><a href="../Pages/contact.html" class="hidden__btnLink">CONTACT</a></li>
+                <li class="hidden__linksLI"><a href="../Pages/aboutUs.html" class="hidden__btnLink">ABOUT US</a></li>
+            </ul>
+
+        <div class="hiddenBtn" onclick="AppearHiddenNav()" id="rightArrow"><i class="fa-solid fa-arrow-right rightArrow"></i></div>
+        <div class="hiddenBtnLeft" onclick="DisappearHiddenNav()" id="leftArrow"><i class="fa-solid fa-arrow-left leftArrow"></i></div>
+
+    </div>
+    
+
+
+    <div class="carousel" id="moveCarousel"> 
+        <div class="imageCarousel selected" id="first">
+            <img src="../Assets/Images/Horses.jpg" alt="Kissing Horses" width="100%" height="100%" id="firstimage">
+        </div>
+
+        <div class="imageCarousel unselected1" id="second">
+            <img src="../Assets/Images/fence horses.jpg" alt="Courios Horses" width="100%" height="100%">
+        </div>
+
+        <div class="imageCarousel unselected2" id="third">
+            <img src="../Assets/Images/horse with calf.jpg" alt="Horse With Calf" width="100%" height="100%">
+        </div>
+        <div class="carouselBtn">
+            <label for="btn1" class="labelVanished">Next</label>
+            <input type="radio" name="carsuel" class="leftButton" checked id="btn1" onclick="MoveImages()">
+            <label for="btn2" class="labelVanished">Next</label>
+            <input type="radio" name="carsuel" class="leftButton1" id="btn2" onclick="MoveImages()">
+            <label for="btn3" class="labelVanished">Next</label>
+            <input type="radio" name="carsuel" class="leftButton2" id="btn3" onclick="MoveImages()">
+        </div>
+    </div>
+
+    <h1 class="headingStory">Our story</h1>
+
+    <article>
+        <div class="storyBlocks">
+            
+            <div class="storyOne">
+                <h2>Our begining</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste id ad dignissimos a      consequatur natus ea eum nulla cupiditate ex nostrum, accusamus officia placeat assumenda nam explicabo eius vero sit.
+                </p>
+                <button class="btnRead" onclick="PopUp()">Read More...</button>
+            </div>
+
+            <div class="storyTwo">
+                <h2>Our horses</h2>
+                <p>
+                    Tempor cubilia congue faucibus praesent integer. Est. Dignissim sagittis leo pretium dictum vel leo senectus. Id hendrerit leo bibendum lectus diam erat sociosqu. Tellus aptent facilisi habitant morbi, arcu magnis neque. Egestas urna proin. Iaculis montes hymenaeos ultrices elit feugiat ante nisi, lectus hac libero ultrices tellus fusce vestibulum. Blandit.
+                </p>
+                <button class="btnRead" onclick="PopUp2()">Read More...</button>
+            </div>
+
+            <div class="storyThree">
+                <h2>Our farm</h2>
+                <p>
+                    Euismod Blandit A Volutpat Accumsan Fermentum Pharetra Arcu
+                    Nec cras venenatis ridiculus quam vivamus tellus porttitor arcu sem nonummy platea porttitor etiam mauris velit commodo volutpat mauris, aliquet tempus integer vehicula etiam Odio. Facilisi placerat cursus semper litora tristique dictumst velit aliquam metus quis habitasse rutrum. Laoreet non.
+                </p>
+                <button class="btnRead" onclick="PopUp3()">Read More...</button>
+            </div>
+
+            <div class="storyFour">
+                <h2>Our journey</h2>
+                <p>
+                    Erat non primis non. Curabitur enim hac sed nec euismod potenti aptent risus tortor. Erat quisque et. Eleifend sem. Vel quisque viverra amet aliquet pretium condimentum. Fusce habitasse gravida viverra pellentesque bibendum montes nonummy adipiscing phasellus fames lectus. Amet mus.
+                </p>
+                <button class="btnRead" onclick="PopUp4()">Read More...</button>
+            </div>
+
+        </div>
+
+        <div  class="firstStory" id="firstStory">
+            <i class="fa-solid fa-xmark close" onclick="CloseUp()"></i>
+            <div class="imageContainer">
+                <img src="../Assets/Images/white horse.jpg" alt="White Horse" width="100%" height="100%">
+            </div>
+            <h3>Laoreet</h3>
+            <p>
+                Netus Senectus Commodo Fringilla Pulvinar Sapien Hendrerit Consequat
+                Consequat pharetra sodales ultricies nullam euismod maecenas justo tincidunt parturient nullam egestas. Odio sagittis justo curae;. Curabitur integer eu bibendum primis hymenaeos ac vel arcu. Sociis hendrerit orci iaculis, mauris integer duis blandit scelerisque turpis sociis at fames euismod. Torquent volutpat placerat tempus dictumst elementum, conubia, posuere inceptos lobortis volutpat, sollicitudin rutrum mauris felis facilisis tristique imperdiet. Congue vulputate dapibus felis condimentum fringilla nisl litora eros, nisi orci rhoncus inceptos luctus semper suspendisse. Magna lobortis nullam imperdiet. Diam bibendum sem Facilisi. Molestie. Id conubia suspendisse massa. Facilisi elit. Aenean congue aliquam accumsan sem facilisi etiam sem, integer ligula ad congue maecenas urna enim neque non commodo fermentum torquent iaculis tempor eleifend eleifend sociis porttitor lorem nibh congue nam quam cras iaculis dictum eros venenatis penatibus fames, ad interdum, eu gravida lacinia quis sociosqu penatibus diam, mattis mi diam quis. Tempus sapien sapien. Gravida class vulputate a laoreet vehicula iaculis purus senectus nam. Tristique sapien. Taciti commodo. Dis metus lacinia in tellus condimentum dui duis condimentum sociosqu placerat Vel consequat nam iaculis potenti libero sollicitudin sed donec nascetur. Dignissim nullam Rhoncus senectus neque elementum leo eu integer senectus cras non dignissim pellentesque Vel pellentesque. Proin malesuada, elementum sit vitae primis amet.
+            </p>
+        </div>
+
+        <div  class="firstStory" id="secondStory">
+            <i class="fa-solid fa-xmark close" onclick="CloseUp2()"></i>
+            <div class="imageContainer">
+                <img src="../Assets/Images/our horses.jpg" alt="Our Horses" width="100%" height="100%">
+            </div>
+            <h3>Facilisis Mi Vivamus</h3>
+            <p>
+                Lorem fames facilisi parturient, torquent, rutrum ullamcorper. Scelerisque cubilia habitasse, ac elit ad urna vitae. Dictum aliquam magna dolor, vel facilisis eleifend class viverra et porta placerat commodo per cum. Consectetuer. Diam ullamcorper convallis, ad nisl pharetra sollicitudin, nostra convallis leo cras venenatis senectus cras hendrerit consectetuer. Eget diam hendrerit nascetur aliquam vulputate aenean luctus rhoncus, velit malesuada molestie, phasellus dictum. Scelerisque sagittis dui. Conubia nec varius amet a et eget sociosqu fames. Pellentesque dictumst leo quis mattis hac cubilia nibh ligula imperdiet. Porta maecenas laoreet pellentesque pretium tellus lorem aenean id id donec dolor habitant senectus et per. Vel dui lacus egestas amet proin curae; quis elementum cras. Sodales facilisi class vestibulum mollis tempus felis duis dapibus sit vitae cras ornare risus nostra eleifend lacus faucibus faucibus diam urna vestibulum taciti, cum elit morbi placerat varius pulvinar ac nascetur eget montes condimentum primis viverra. Ornare nisi vel cras ultrices ante faucibus fringilla blandit convallis risus eleifend magna id bibendum torquent amet hymenaeos aenean aenean. Fringilla quisque est dis consequat nostra tempus nec cum venenatis fames aliquam nibh tincidunt Pretium penatibus lorem penatibus parturient hac interdum dis faucibus lobortis. Congue semper dapibus. Taciti ullamcorper. Ligula phasellus fermentum eget vel senectus.
+            </p>
+        </div>
+
+        <div  class="firstStory" id="thridStory">
+            <i class="fa-solid fa-xmark close" onclick="CloseUp3()"></i>
+            <div class="imageContainer">
+                <img src="../Assets/Images/barn.jpg" alt="Barn" width="100%" height="100%">
+            </div>
+            <h3>Fusce Risus</h3>
+            <p>
+                Non pharetra aptent ultricies Amet. Platea metus vel velit accumsan imperdiet gravida sociosqu, augue fringilla cum nullam accumsan sapien vitae posuere. Libero laoreet feugiat. A proin nibh hendrerit, elit natoque inceptos. Lobortis. Lacus, etiam nascetur pellentesque diam habitant amet interdum vestibulum non. Lobortis augue etiam morbi proin lorem conubia leo. Cum a vulputate euismod eget vel nulla. Tempus odio nascetur fringilla felis suspendisse tristique sem hymenaeos aenean torquent lectus Nascetur nam dui dui eget eget class porttitor nibh elit pede. Posuere inceptos lorem interdum arcu, facilisis scelerisque convallis Massa scelerisque iaculis turpis nullam sit class. Nostra adipiscing facilisi. Imperdiet aliquet mus euismod cum class parturient penatibus luctus non habitant semper habitant interdum ipsum sociis imperdiet purus congue. Natoque nisi bibendum commodo congue eros viverra nec iaculis nisi felis. Est feugiat ante nulla leo congue. Nascetur posuere sollicitudin nisi donec amet lacinia convallis, nascetur dolor, ullamcorper fermentum sagittis accumsan Pretium hendrerit volutpat. Nisi urna. Consectetuer tincidunt eleifend praesent Aliquet sed sociis curabitur enim neque gravida nulla hendrerit curabitur netus. Cras convallis elit dolor, nibh egestas luctus et turpis sapien, dui eros nibh nec elit laoreet tellus purus faucibus sodales. Vulputate tempus augue dolor neque purus viverra at iaculis pretium magnis pharetra.
+            </p>
+        </div>
+
+        <div  class="firstStory" id="fourthStory">
+            <i class="fa-solid fa-xmark close" onclick="CloseUp4()"></i>
+            <div class="imageContainer">
+                <img src="../Assets/Images/journey.jpg" alt="Our journey" width="100%" height="100%">
+            </div>
+            <h3>Pharetra Facilisi Iaculis</h3>
+            <p>
+                Est suscipit. Netus. Condimentum lacus netus. Tincidunt torquent hac, nec, senectus dolor. Tempus ultricies semper lacus. Purus posuere mauris pretium nisi duis euismod gravida turpis nibh convallis ipsum praesent est. Habitant ornare aliquam ante magna. Erat Duis ac laoreet venenatis ante dui venenatis orci scelerisque sit platea potenti dis adipiscing. Tincidunt class. Duis lacus cubilia curabitur lacinia curabitur bibendum. Per natoque leo primis semper potenti penatibus praesent. Convallis arcu eleifend conubia ipsum, ultricies platea diam mauris egestas. Dolor mus tempor blandit lorem fringilla magnis vestibulum lorem a praesent felis duis porta curae;, tellus suscipit phasellus sed. Convallis non feugiat. Taciti tempor ante faucibus arcu montes ultricies tempor vel cubilia, congue. Sollicitudin id libero. Condimentum tellus. Rhoncus eleifend varius. Curae;. Fermentum porta dapibus at id cras etiam at senectus accumsan vestibulum aptent volutpat facilisi tortor hac nonummy dui lacinia vivamus lobortis, vulputate nec quis gravida lacus nec urna euismod. Interdum euismod Hymenaeos, accumsan et, integer netus purus ac mollis nunc taciti. Natoque platea elementum, felis varius. Tristique tincidunt senectus amet. Sollicitudin risus a imperdiet dui. Sagittis fames nibh hendrerit sed dui natoque arcu. Aliquam parturient, adipiscing habitasse gravida hymenaeos mi cum accumsan inceptos primis nam dui eleifend dictum Semper non imperdiet. 
+            </p>
+        </div>
+
+    </article>
+
+    <h1 class="headingGames" id="games">Games</h1>
+    
+    <article class="racecourse">
+        <div class="panel">
+            <p class="congrats" id="congrat">GO</p>
+            <span class="panelDistance">Your distance: <p class="distance" id="distance">0m</p></span>
+            <span class="panelOPDistance">Opponent distance: <p class="distance" id="distance2">0m</p></span>
+        </div>
+        <div class="playSection">
+            <p class="playText">Select the difficulty:</p>
+            <div class="difficultyBtn">
+                <input type="button" value="Easy" id="easy" onclick="Easy()" class="playBtn">
+                <input type="button" value="Medium" id="medium" onclick="Medium()" class="playBtn">
+                <input type="button" value="Hard" id="hard" onclick="Hard()" class="playBtn">
+            </div>
+            <span class="playText">"Run" button will enabled after 2 seconds you choose difficulty.</span>
+            <input type="button" value="Run" id="btnRunE" onclick="Move()" disabled class="playBtn ebtnRun">
+            <input type="button" value="Run" id="btnRunM" onclick="MoveM()" disabled class="playBtn mbtnRun">
+            <input type="button" value="Run" id="btnRunH" onclick="MoveH()" disabled class="playBtn hbtnRun">
+            <input type="button" value="See the difference" id="seeDiffE" disabled onclick="DifferE()" class="playDiffBtn ePlayDiff">
+            <input type="button" value="See the difference" id="seeDiffM" disabled onclick="DifferM()" class="playDiffBtn mPlayDiff">
+            <input type="button" value="See the difference" id="seeDiffH" disabled onclick="DifferH()" class="playDiffBtn hPlayDiff">
+            <p class="differenceStyle" id="difference">0m</p>
+        </div>    
+
+        <div class="containerCourse">
+            <div class="courseTrack">
+                <div class="firstHorseE" id="firstHorseE"><span>YOU</span></div>
+            </div>
+            <div class="courseTrack">
+                <div class="secondHorseE" id="secondHorseE">OPPONENT</div>
+            </div>
+        </div>
+
+    </article>
+
+    <h2 class="headingGames">Matching Images</h2>
+    <p class="headingGames">You need to match images and check if they are matching.</p>
+    <article class="game2">
+        <div class="imageTest">
+            <img src="../Assets/Images/barn.jpg" alt="barn" id="barn" onclick="DisappearBarn()" width="100%" height="100%">
+        </div>
+        <div class="imageTest">
+            <img src="../Assets/Images/horseCalf.jpg" alt="horse calf" id="horseCalf"  onclick="DisappearHorseCalf()" width="100%" height="100%">
+        </div>
+        <div class="imageTest">
+            <img src="../Assets/Images/womanAndHorse.jpg" alt="woman and horse" id="womanAndHorse" onclick="DisappearWomanAndHorse()" width="100%" height="100%">
+        </div>
+        <div class="imageTest">
+            <img src="../Assets/Images/white horse.jpg" alt="white horse" id="whiteHorse1" onclick="DisappearWhiteHorse1()" width="100%" height="100%">
+        </div>
+        <!-- Row 2 -->
+        <div class="imageTest">
+            <img src="../Assets/Images/horseCalf.jpg" alt="horse calf" id="horseCalf1" onclick="DisappearHorseCalf1()" width="100%" height="100%">
+        </div>
+        <div class="imageTest">
+            <img src="../Assets/Images/womanAndHorse.jpg" alt="woman and horse" id="womanAndHorse1" onclick="DisappearWomanAndHorse1()" width="100%" height="100%">
+        </div>
+        <div class="imageTest">
+            <img src="../Assets/Images/white horse.jpg" alt="white horse" id="whiteHorse" onclick="DisappearWhiteHorse()" width="100%" height="100%">
+        </div>
+        <div class="imageTest">
+            <img src="../Assets/Images/barn.jpg" alt="barn" id="barn1"  onclick="DisappearBarn1()" width="100%" height="100%">
+        </div>
+    </article>
+    <p class="headingGames" id="infoMatchGames"></p>
+    
+    <h1 class="headingGames" id="bets">Bets</h1>
+
+    <article class="horseBets">
+        <div class="betCards">
+            <div class="betImages"><img src="../Assets/Images/horse1.jpg" alt="" width="100%" height="100%"></div>
+            <div class="infoHorse">
+                <p>Name: Roberto</p>
+                <p>Number: 1</p>
+            </div>
+        </div>
+        <div class="betCards">
+            <div class="betImages"><img src="../Assets/Images/horse2.jpg" alt="" width="100%" height="100%"></div>
+            <div class="infoHorse">
+                <p>Name: Edmundo</p>
+                <p>Number: 2</p>
+            </div>
+        </div>
+        <div class="betCards">
+            <div class="betImages"><img src="../Assets/Images/horse3.jpg" alt="" width="100%" height="100%"></div>
+            <div class="infoHorse">
+                <p>Name: Cathy</p>
+                <p>Number: 3</p>
+            </div>
+        </div>
+        <div class="betCards">
+            <div class="betImages"><img src="../Assets/Images/horse4.jpg" alt="" width="100%" height="100%"></div>
+            <div class="infoHorse">
+                <p>Name: Lighting</p>
+                <p>Number: 4</p>
+            </div>
+        </div>
+        <div class="betCards">
+            <div class="betImages"><img src="../Assets/Images/horse5.jpg" alt="" width="100%" height="100%"></div>
+            <div class="infoHorse">
+                <p>Name: Thunder</p>
+                <p>Number: 5</p>
+            </div>
+        </div>
+        <div class="betCards">
+            <div class="betImages"><img src="../Assets/Images/horse6.jpg" alt="" width="100%" height="100%"></div>
+            <div class="infoHorse">
+                <p>Name: Speedy</p>
+                <p>Number: 6</p>
+            </div>
+        </div>
+        <div class="betCards">
+            <div class="betImages"><img src="../Assets/Images/horse7.jpg" alt="" width="100%" height="100%"></div>
+            <div class="infoHorse">
+                <p>Name: Violet</p>
+                <p>Number: 7</p>
+            </div>
+        </div>
+        <div class="betCards">
+            <div class="betImages"><img src="../Assets/Images/horse8.jpg" alt="" width="100%" height="100%"></div>
+            <div class="infoHorse">
+                <p>Name: Scarlett</p>
+                <p>Number: 8</p>
+            </div>
+        </div>
+        <div class="betCards">
+            <div class="betImages"><img src="../Assets/Images/horse9.jpg" alt="" width="100%" height="100%"></div>
+            <div class="infoHorse">
+                <p>Name: The Grandpa</p>
+                <p>Number: 9</p>
+            </div>
+        </div>
+        <div class="betCards">
+            <div class="betImages"><img src="../Assets/Images/horse10.jpg" alt="" width="100%" height="100%"></div>
+            <div class="infoHorse">
+                <p>Name: The Joker</p>
+                <p>Number: 10</p>
+            </div>
+        </div>
+        <div class="betCards">
+            <div class="betImages"><img src="../Assets/Images/horse11.jpg" alt="" width="100%" height="100%"></div>
+            <div class="infoHorse">
+                <p>Name: Tornado</p>
+                <p>Number: 11</p>
+            </div>
+        </div>
+        <div class="betCards">
+            <div class="betImages"><img src="../Assets/Images/horse12.jpg" alt="" width="100%" height="100%"></div>
+            <div class="infoHorse">
+                <p>Name: Morgan</p>
+                <p>Number: 12</p>
+            </div>
+        </div>
+        <div class="betCards">
+            <div class="betImages"><img src="../Assets/Images/horse13.jpg" alt="" width="100%" height="100%"></div>
+            <div class="infoHorse">
+                <p>Name: Sunset</p>
+                <p>Number: 13</p>
+            </div>
+        </div>
+        <div class="betCards">
+            <div class="betImages"><img src="../Assets/Images/horse14.jpg" alt="" width="100%" height="100%"></div>
+            <div class="infoHorse">
+                <p>Name: The Queen</p>
+                <p>Number: 14</p>
+            </div>
+        </div>
+    </article>
+
+    <article class="betArt">
+        <h2 class="headingUserBets">Place Bet</h2>
+        <div class="betLocation">
+            <label for="numb">Enter the number of the horse that you want to bet.</label>
+            <input type="number" name="" id="numb">
+            <input type="button" value="Bet" id="bet" onclick="Bet()" class="betBtn">
+            <p>Your money: <span id="userMoney">200</span>$</p>
+            <p>Every bet will cost you 10$. All bets are 1.5x.</p>
+            <p id="showResult"></p>
+        </div>
+    </article>
+
+    <h2 class="headingGames" id="tickets">Tickets</h2>
+
+    <article class="tickets">
+
+        <div class="tickets__kids">
+            <div class="tickets__kids--background"></div>
+            <div class="tickets__kidsText">
+                <h3 class="headingKidsT">Tickets for kids</h3>
+                <p class="kidsText">The price of one ticket is 10$</p>
+                <input class="tickets__kids_btn" type="button" value="Buy" id="tickets__kids" onclick="BuyTicketsKids()">
+            </div>
+            
+        </div>
+        <div class="tickets__students">
+            <div class="tickets__students--background"></div>
+            <div class="tickets__studentsText">
+                <h3 class="headingStudentsT">Tickets for students</h3>
+                <p class="studentsText">The price of one ticket is 15$</p>
+                <input class="tickets__students_btn" type="button" value="Buy" onclick="BuyTicketsStudents()">
+            </div>
+        </div>
+        <div class="tickets__family">
+            <div class="tickets__family--background"></div>
+            <div class="tickets__familyText">
+                <h3 class="headingFamilyT">Tickets for families</h3>
+                <p class="familyText">The price of one ticket is 20$</p>
+                <input class="tickets__family_btn" type="button" value="Buy" onclick="BuyTicketsFamilies()">
+            </div>
+        </div>
+        <div class="tickets__retiremente">
+            <div class="tickets__retiremente--background"></div>
+            <div class="tickets__retirementeText">
+                <h3 class="headingRetirementeT">Tickets for retired</h3>
+                <p class="retirementeText">The price of one ticket is 10$</p>
+                <input class="tickets__retirement_btn" type="button" value="Buy" onclick="BuyTicketsRetierd()">
+            </div>
+        </div>
+
+    </article>
+
+    <footer class="footer">
+        <div class="logoIndex">Ploiesti Racecourse</div>
+        <div class="footer__copyright">
+            &copy;Copyright 2022. All Rights Reserved To Ploiesti Racecourse &trade;
+        </div>
+    </footer>
+
+
+
+    <div class="containerProfile" id="containerProfile">
+        <div class="containerProfile__money" id="containerProfile__money" title="Money">
+            <p class="containerProfile__money-text"><span id="userMoney1">200</span>$</p>
+        </div>
+
+        <div class="containerProfile__editProfile" id="containerProfile__editProfile" onclick="AppearEditProfile()" title="Edit Profile" >
+            <p class="containerProfile__editProfile-text">Edit</p>
+        </div>
+
+        <div class="containerProfile__tickets" id="containerProfile__tickets" title="Tickets">
+            <p class="containerProfile__tickets-text">Tickets: <br><span id="userTickets">0</span></p>
+        </div>
+
+        
+    </div>
+
+    <div class="containerProfile__profile" onclick="Disappear()" title="Profile">
+        <img src="" alt="Picture" width="100%" height="100%" class="profilePicture" id="profilePicture">
+    </div>
+
+    <div class="coverEditProfile" id="coverEditProfile">
+        <div class="editProfile" id="editProfile">
+            <i class="fa-solid fa-xmark close" onclick="DisappearEditProfile()"></i>
+            <h2 class="editProfile__heading">Edit Profile</h2>
+            <label for="name" class="editProfile__editName">Edit your name: </label>
+            <input type="text" name="" class="editProfile__enterName" id="name" placeholder="Michael">
+            <label for="mail" class="editProfile__editMail">Edit your mail: </label>
+            <input type="email" name="" class="editProfile__enterMail" id="mail" placeholder="example@gmail.com">
+            <label for="picture" class="editProfile__editProfilePicture">Edit your profile picture: </label>
+            <input type="file" name="" class="editProfile__enterImage" id="picture" accept="image/jpg">
+            <input type="button" class="editProfile__btn" value="Save Changes" onclick="EditProfile()">
+
+            <h2 class="editProfile__headingProfile">Your profile</h2>
+            <h3 class="editProfile__name">Your name: </h3>
+            <p class="editProfile__showName" id="nameSaved"></p>
+            <h3 class="editProfile__mail">Your email: </h3>
+            <p class="editProfile__showMail" id="mailSaved"></p>
+            <h3 class="editProfile__picture">Your profile picture: </h3>
+            <img class="picture" src="" alt="Profile picture" id="pictureSaved">
+        </div>
+    </div>
+
+    <!-- Calculator may will be added later as a feature -->
+
+    <!-- <div class="container">
+        <div class="calculator">
+            <h1>Calculator</h1>
+
+            <div class="divResult">
+                <p id="para" class="result"></p>
+            </div>
+
+            <div class="operators">
+
+                <div>
+                    <label for="check1" id="label1">Addition "+"</label>
+                    <input type="radio" name="add1" id="check1" onclick="Verify()">
+                </div>
+
+                <div>
+                    <label for="check2" id="label2">Subtraction "-"</label>
+                    <input type="radio" name="add1" id="check2" onclick="Verify()">
+                </div>
+
+                <div>
+                    <label for="check3" id="label3">Multiplication "*"</label>
+                    <input type="radio" name="add1" id="check3" onclick="Verify()">
+                </div>
+
+                <div>
+                    <label for="check4" id="label4">Division "/"</label>
+                    <input type="radio" name="add1" id="check4" onclick="Verify()">
+                </div>
+
+            </div>
+
+            <div class="numbers">
+                <div>
+                    <label for="numb1">Enter your number</label>
+                    <input type="number" name="" id="numb1" value="">
+                </div>
+                
+                <div>
+                    <label for="numb2">Enter your number</label>
+                    <input type="number" name="" id="numb2" value="">
+                </div>
+            </div>
+            
+
+            <div class="info">
+                <p id="youDo" class="infoBtn"></p>
+            </div>
+
+            <div class="btns">
+                <input type="button" value="Result" id="btn" onclick="myNumber()" class="resultBTN">
+                <input type="button" value="Reset All" id="restBTN" onclick="ResetAll()" class="resetAllBTN">
+                <input type="button" value="Reset" id="restBTN1" onclick="Reset()" class="resetBTN">
+            </div>
+        </div>
+    </div> -->
+</body>
+</html>

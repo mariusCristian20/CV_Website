@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 7%;
+  border-top: 2px solid #DFDFDF;
+  text-align: center;
+}
+.bodyLog {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px 1fr;
+}
+.navLog {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  font-family: 'Kaushan Script', cursive;
+  border-bottom: 2px solid #DFDFDF;
+  grid-row: 1 / 2;
+}
+.logo {
+  font-size: 40px;
+  font-weight: 900;
+  font-style: italic;
+  background: linear-gradient(160deg, #C70039, #900C3F, #581845);
+  -moz-background-clip: text;
+  -moz-color-fill: transparent;
+  -webkit-background-clip: text;
+  -webkit-color-fill: transparent;
+  background-clip: text;
+  color: transparent;
+  width: 100%;
+  text-align: center;
+}
+.infoGet {
+  grid-row: 2 / 3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.infoGet .formStyle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #C70039;
+  border-radius: 20px;
+  border: 1.5px solid #DFDFDF;
+  height: 300px;
+  width: 266px;
+}
+.infoGet .formStyle .name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.infoGet .formStyle .name .nameLabel {
+  margin-bottom: 10px;
+  font-family: 'Fira Sans', sans-serif;
+  color: #fff;
+}
+.infoGet .formStyle .pictureArea .pictureLabel{
+  margin-bottom: 10px;
+  font-family: 'Fira Sans', sans-serif;
+  color: #fff;
+}
+.infoGet .formStyle .name .nameInput {
+  background: #fff;
+  border-radius: 20px;
+  border: 1.5px solid #DFDFDF;
+  height: 25px;
+  font-family: 'Fira Sans', sans-serif;
+}
+.infoGet .formStyle .pictureArea{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.infoGet .formStyle .pictureArea .editProfile__enterImage {
+  margin-left: 35%;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.infoGet .formStyle .mail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.infoGet .formStyle .mail .mailLabel {
+  margin-bottom: 10px;
+  font-family: 'Fira Sans', sans-serif;
+  color: #fff;
+}
+.infoGet .formStyle .mail .mailInput {
+  background: #fff;
+  border-radius: 20px;
+  border: 1.5px solid #DFDFDF;
+  height: 25px;
+  font-family: 'Fira Sans', sans-serif;
+}
+.infoGet .formStyle .btn {
+  border-radius: 20px;
+  width: 70px;
+  height: 25px;
+  border: 1.5px solid #DFDFDF;
+  background-color: #900C3F;
+  font-family: 'Fira Sans', sans-serif;
+  color: #fff;
+}
+.infoGet .formStyle .btn:active {
+  background-color: #581845;
+}
+
+
+@media (max-width: 500px) {
+  .logo {
+    font-size: 35px;
+  }
+}
+@media (max-width: 300px) {
+  .logo {
+    font-size: 30px;
+  }
+}

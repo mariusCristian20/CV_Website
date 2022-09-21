@@ -1,0 +1,133 @@
+@import "style";
+
+.headingWrite {
+    grid-area: headingWrite;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #5C5D5C;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerForm {
+    grid-area: containerForm;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.info {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.personalInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.inputPersonal {
+    height: 30px;
+    width: 100%;
+    border: 1px solid #5C5D5C;
+    border-radius: 5px;
+    background: none;
+}
+
+.contact {
+    margin-top: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.contactP {
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.topic {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 20px;
+}
+
+.labelTopic {
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.selesctDrop {
+    height: 35px;
+    width: 100%;
+    background: none;
+    border-radius: 10px;
+    border: 1px solid #5C5D5C;
+    margin-top: 5px;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 20px;
+}
+
+.labelMessage {
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.checkBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin-top: 20px;
+}
+
+@media(max-width: 600px) {
+
+    .checkBtn,
+    .message,
+    .topic,
+    .contact,
+    .info {
+        width: 95%;
+    }
+
+}
+
+@media(min-width:600px) and (max-width: 950px) {
+    .checkBtn {
+        width: 80%;
+    }
+
+    .message {
+        width: 80%;
+    }
+
+    .topic {
+        width: 80%;
+    }
+
+    .contact {
+        width: 80%;
+    }
+}

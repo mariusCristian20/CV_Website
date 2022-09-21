@@ -1,0 +1,119 @@
+@import "../LESS/styles.less";
+
+.coverEditProfile {
+    width: 100%;
+    height: 100vh;
+    background-color: #00000080;
+    position: fixed;
+    display: none;
+
+    .editProfile {
+        position: relative;
+        top: 4%;
+        margin: 0 auto;
+        width: 540px;
+        height: 550px;
+        border-radius: 5%;
+        background-color: #fff;
+        .flexArangement(column, flex-start);
+        transform: translateY(-550px);
+        // opacity: 20%;
+        transition: all 2s ease-in-out;
+
+        .editProfile__heading {
+            .mixinTitle();
+            font-family: 'Kaushan Script', cursive;
+            text-align: center;
+            width: 150px;
+        }
+
+        .editProfile__editName {
+            .editProfile();
+        }
+
+        .editProfile__enterName {
+            .editProfile_enter();
+        }
+
+        .editProfile__editMail {
+            .editProfile();
+        }
+
+        .editProfile__enterMail {
+            .editProfile_enter();
+        }
+
+        .editProfile__editProfilePicture {
+            .editProfile();
+        }
+
+        .editProfile__enterImage {
+            .editProfile_enter();
+        }
+
+        .editProfile__btn {
+            padding: 5px;
+            border-radius: 12px;
+            border: none;
+            background-color: #C70039;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .editProfile__headingProfile {
+            margin: 10px 0px;
+        }
+
+        .editProfile__name {
+            .editProfile();
+        }
+
+        .editProfile__showName {
+            width: -moz-fit-content;
+            width: fit-content;
+            border-bottom: 1px solid rgba(0, 0, 0, .5);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .editProfile__mail {
+            .editProfile();
+        }
+
+        .editProfile__showMail {
+            width: -moz-fit-content;
+            width: fit-content;
+            border-bottom: 1px solid rgba(0, 0, 0, .5);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .editProfile__picture {
+            .editProfile();
+        }
+
+        .close {
+            position: absolute;
+            right: 30px;
+            top: 15px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+    }
+
+}
+
+@media(max-width: 700px){
+    .editProfile {
+        width: 440px !important;
+    }
+}
+
+@media(max-width: 500px) {
+    .editProfile {
+        width: 340px !important;
+    }
+}
+
+@media(max-width: 400px) {
+    .editProfile {
+        width: 270px !important;
+    }
+}

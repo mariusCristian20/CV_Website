@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../Assets/CSS/homePage.css">
+    <link rel="stylesheet" type="text/html" href="../Assets/CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="../Assets/CSS/contact.css">
+
+    <!-- LESS -->
+    <!-- <link rel="stylesheet/less" type="text/css" href="../Assets/LESS/styles.less" />
+    <link rel="stylesheet/less" type="text/css" href="../Assets/LESS/homePage.less" />
+    <link rel="stylesheet/less" type="text/css" href="../Assets/LESS/contact.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less@4" ></script> -->
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Kaushan+Script&family=Noto+Sans:wght@600&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!--JavaScript-->
+    <script src="../JavaScript/hiddenNav.js" defer></script>
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="../Assets/Font Awesome/fontawesome-free-6.1.1-web/css/all.min.css">
+
+    <title>Contact | Ploiesti Racecourse</title>
+</head>
+<body class="homeBody">
+    
+    <nav class="navIndex">
+        <div class="containerLinks">
+            <ul class="navLinks">
+                <li class="linksLI"><a href="../Pages/index.html" class="btnLink">HOME</a></li>
+                <li class="linksLI"><a href="../Pages/index.html" class="btnLink">GAMES</a></li>
+                <li class="linksLI"><a href="../Pages/index.html" class="btnLink">BETS</a></li>
+                <li class="linksLI"><a href="../Pages/index.html" class="btnLink">BUY TICKET</a></li>
+                <li class="linksLI"><a href="../Pages/contact.html" class="btnLink">CONTACT</a></li>
+                <li class="linksLI"><a href="../Pages/aboutUs.html" class="btnLink">ABOUT US</a></li>
+            </ul>
+        </div>
+
+        <a href="../Pages/index.html" class="logoLink"><div class="logoIndex">Ploiesti Racecourse</div></a>
+    </nav>
+
+    <div class="hiddenNav" id="hiddenNav">
+        <ul class="hiden_navLinks">
+                <li class="hidden__linksLI"><a href="../Pages/index.html" class="hidden__btnLink">HOME</a></li>
+                <li class="hidden__linksLI"><a href="../Pages/index.html" class="hidden__btnLink">GAMES</a></li>
+                <li class="hidden__linksLI"><a href="../Pages/index.html" class="hidden__btnLink">BETS</a></li>
+                <li class="hidden__linksLI"><a href="../Pages/index.html" class="hidden__btnLink">BUY TICKET</a></li>
+                <li class="hidden__linksLI"><a href="../Pages/contact.html" class="hidden__btnLink">CONTACT</a></li>
+                <li class="hidden__linksLI"><a href="../Pages/aboutUs.html" class="hidden__btnLink">ABOUT US</a></li>
+            </ul>
+
+        <div class="hiddenBtn" onclick="AppearHiddenNav()" id="rightArrow"><i class="fa-solid fa-arrow-right rightArrow"></i></div>
+        <div class="hiddenBtnLeft" onclick="DisappearHiddenNav()" id="leftArrow"><i class="fa-solid fa-arrow-left leftArrow"></i></div>
+
+    </div>
+
+    <div class="map">
+        <iframe class="frame" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2825.6582163911494!2d26.04082583449125!3d44.9117067889899!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b2375967caf4bf%3A0x95c69fd522c197d8!2sHipodromul%20Ploie%C8%99ti!5e0!3m2!1sro!2sro!4v1662629731986!5m2!1sro!2sro" width="600" height="450" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade" title="Ploiesti Racecourse"></iframe>
+     <div class="map__info">
+        <p>Phone number: <span>0756 332 431</span></p>
+        <p>E-mail: ploiestiracecourse1920@gmail.com</p>
+     </div>
+    </div>
+
+    <div class="contact">
+        <h2 class="contact__heading">Positioning and geography.</h2>
+
+        <p class="contact__text1">
+            Together with Crângul lui Bot and Păulestii, the location of the Racetrack of Ploiesti is mentioned since the ’20, as one of the three potential exterior parks of Ploiesti city, analyzed by “The Project of Systematization, Extension and Enrichment of the Ploiesti Municipality”.
+        </p>
+
+        <p class="contact__text2">
+            The land is located appreciatively 3 km from the next highway project Bucharest- Ploiesti, and is easily accessed from Bucharest area due to his positioning in the exterior limit of the city.
+        </p>
+
+        <p class="contact__text3">
+            The position of the Racetrack, along Bucuresti Boulevard, which is the access artery in Ploiesti city, together with the Oil and Gas University create an Access Gate into the City, as defined in the strategy of the town.
+        </p>
+    </div>
+
+    <footer class="footer">
+        <div class="logoIndex">Ploiesti Racecourse</div>
+        <div class="footer__copyright">
+            &copy;Copyright 2022. All Rights Reserved To Ploiesti Racecourse &trade;
+        </div>
+    </footer>
+</body>
+</html>

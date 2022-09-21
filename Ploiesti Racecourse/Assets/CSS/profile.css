@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 7%;
+  border-top: 2px solid #DFDFDF;
+  text-align: center;
+}
+.containerProfile {
+  width: -moz-fit-content;
+  width: fit-content;
+  position: fixed;
+  height: 0px;
+  right: 0;
+  bottom: 240px;
+  display: grid;
+  grid-template-columns: 60px;
+  grid-template-rows: repeat(3, 60px);
+  margin: 20px;
+  cursor: pointer;
+}
+.containerProfile .containerProfile__tickets {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #581845;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0%;
+  transition: all 2s ease-in-out;
+}
+.containerProfile .containerProfile__tickets-text {
+  color: #DFDFDF;
+  margin-top: 35%;
+  text-align: center;
+  text-shadow: 1px 1px 12px #000;
+}
+.containerProfile .containerProfile__editProfile-text {
+  color: #DFDFDF;
+  margin-top: 35%;
+  text-align: center;
+  text-shadow: 1px 1px 12px #000;
+}
+.containerProfile .containerProfile__editProfile {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #581845;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0%;
+  transition: all 2s ease-in-out;
+}
+.containerProfile .containerProfile__money {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #581845;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0%;
+  transition: all 2s ease-in-out;
+}
+.containerProfile .containerProfile__money-text {
+  color: #DFDFDF;
+  margin-top: 35%;
+  text-align: center;
+  text-shadow: 1px 1px 12px #000;
+}
+.containerProfile__profile {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  /* background-image: url(../Images/barn.jpg); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 100;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.profilePicture{
+  border-radius: 50%;
+}
+.containerProfile__profile-text {
+  color: #DFDFDF;
+  margin-top: 35%;
+  text-align: center;
+  text-shadow: 1px 1px 12px #000;
+}

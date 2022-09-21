@@ -1,0 +1,60 @@
+table.secondTable{
+    border: 3px double gray; 
+    border-collapse: collapse;
+    background-color: white;
+}
+
+td{
+    border: 1px solid black;
+}
+
+.firstColorTable{
+    background-color: #E5890A;
+}
+.secondColorTable{
+    background-color: #78938A;
+}
+
+.thirdColorTable{
+    background-color: #FF6464;
+}
+
+.fourthColorTable{
+    background-color: #91C483;
+}
+
+.fifthColorTable{
+    background-color: #9D84B7;
+}
+
+.textCell{
+    position: relative;
+    top: 60px;
+}
+
+table.threeRows{
+    float: right;
+    border-collapse: collapse;
+}
+
+.plus1, .minus1, .minus2, .plus3, .minus3{
+    height: 60px;
+    width: 20px;
+}
+.question1, .question2, .question3{
+    height: 26px;
+    width: 20px;
+}
+.plus2 {
+    height: 33px;
+    width: 20px;
+}
+
+
+.huggingTable{
+    overflow: auto;
+}
+
+.boldV{
+    font-weight: 900;
+}

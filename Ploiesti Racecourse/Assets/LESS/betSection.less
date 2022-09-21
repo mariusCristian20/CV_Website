@@ -1,0 +1,63 @@
+@import "../LESS/styles.less";
+
+.horseBets {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 300px;
+    width: 90%;
+    overflow-x: auto;
+    margin: 0 auto;
+
+    .infoHorse {
+        .flexArangement(column, center);
+        font-family: 'Kaushan Script', cursive;
+    }
+}
+
+.betArt {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .flexArangement(column, space-between);
+
+    .headingUserBets {
+        margin: 10px 0px;
+        font-family: 'Kaushan Script', cursive;
+        .mixinTitle();
+        width: 100px;
+    }
+
+    .betLocation {
+        .flexArangement(column, space-between);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+
+        .betBtn {
+            margin: 10px 0px;
+            width: 70px;
+            height: 30px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: large;
+            background-color: #C70039;
+            border: none;
+            transition: all .5s ease-in-out;
+
+            &:hover {
+                background-color: #581845;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+            }
+
+            &:active {
+                background-color: #581845;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                border-top-left-radius: 15px;
+                border-bottom-left-radius: 15px;
+            }
+        }
+    }
+}

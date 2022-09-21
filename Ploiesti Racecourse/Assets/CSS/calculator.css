@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 7%;
+  border-top: 2px solid #DFDFDF;
+  text-align: center;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 500px;
+}
+.calculator {
+  grid-column: 2 / 3;
+  text-align: center;
+  background-color: blue;
+  border-radius: 20px;
+}
+.calculator .divResult {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.calculator .operators {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.calculator .result {
+  width: 95%;
+  height: 40px;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.calculator .numbers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  height: 50px;
+}
+.calculator .info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.calculator .info .infoBtn {
+  width: 50%;
+  height: 30px;
+  background-color: cyan;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.calculator .btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.calculator .btns .resultBTN {
+  width: 25%;
+  height: 20px;
+  background-color: #15ff00;
+  border-radius: 13px;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.calculator .btns .resultBTN:hover {
+  box-shadow: 1px 1px 12px #15ff00;
+}
+.calculator .btns .resetAllBTN {
+  width: 25%;
+  height: 20px;
+  background-color: #15ff00;
+  border-radius: 13px;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.calculator .btns .resetAllBTN:hover {
+  box-shadow: 1px 1px 12px #15ff00;
+}
+.calculator .btns .resetBTN {
+  width: 25%;
+  height: 20px;
+  background-color: #15ff00;
+  border-radius: 13px;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.calculator .btns .resetBTN:hover {
+  box-shadow: 1px 1px 12px #15ff00;
+}

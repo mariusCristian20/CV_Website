@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- JavaScript -->
+  <script src="../JavaScript/index.js" defer></script>
+  <script src="../JavaScript/addContent.js" defer></script>
+  <script src="../JavaScript/getCountNotDynamic.js" defer></script>
+
+  <!-- Styling -->
+  <link rel="stylesheet" href="../Assets/CSS/style.css" />
+  <link rel="stylesheet" href="../Assets/CSS/styleTable.css">
+
+
+  <!-- Google Icons -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mina&family=Rubik&family=Russo+One&family=Yusei+Magic&display=swap"
+    rel="stylesheet">
+
+  <title>Feed</title>
+</head>
+
+<body>
+  <nav class="navBar">
+    <div class="continerNav">
+      <h3 class="logo">SpaceBook</h3>
+      <!-- <p class="motivationalQuote">The space where you can find your place.</p> -->
+      <div class="navButtonsFirst">
+        <a href="" class="homeButton first"><i class="material-symbols-outlined">home</i> Feed</a>
+
+        <a href="" class="friendsButton first" id="friendsBtns"><i
+            class="material-symbols-outlined">supervised_user_circle</i>
+          Friends</a>
+
+        <a href="" class="groupButton first"><i class="material-symbols-outlined">group</i> Groups</a>
+      </div>
+    </div>
+
+    <div class=" navButtons">
+      <a href="" class="homeButton"><i class="material-symbols-outlined">home</i> Feed</a>
+
+      <a href="" class="friendsButton"><i class="material-symbols-outlined">supervised_user_circle</i> Friends</a>
+
+      <a href="" class="groupButton"><i class="material-symbols-outlined">group</i> Groups</a>
+      <input type="search" name="" id="" placeholder="Search users..." class="searchBar" />
+      <i class="material-symbols-outlined magnifyingGlass">search</i>
+    </div>
+
+    <div class="account" id="account">
+      <div class="imageProfileFeed">
+        <img class="profile" src="../Assets/Images/question-mark-green.png" alt="Choose Image" id="profile" />
+      </div>
+      <span class="nameUser" id="user">Profile</span>
+    </div>
+  </nav>
+
+  <div class="content">
+
+    <div class="feedPost" id="feedPost">
+
+      <div class="card">
+        <div class="info">
+          <div>
+            <img src="../Assets/Images/michael.jpg" alt="Michael profile" class="imgProfile" />
+          </div>
+          <div>
+            <h3 class="usersID">James Michael</h3>
+            <p class="timePost">13:30 PM 12.03.2022</p>
+          </div>
+        </div>
+        <h3 class="userContent">Look at this frog...😍😍😍</h3>
+
+        <img src="../Assets/Images/frog.jpg" alt="Frog Post" width="100%" />
+
+        <div class="reactionBar" id="reactionBar">
+          <span class="likeCountIcon">
+            <span class="material-symbols-outlined likeColor">favorite</span>
+            <span class="like"></span>
+          </span>
+          <span class="commentCountIcon">
+            <span class="material-symbols-outlined">chat</span>
+            <span class="comments"></span>
+          </span>
+          <span class="shareCountIcon">
+            <span class="material-symbols-outlined">send</span>
+            <span class="shares"></span>
+          </span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="info">
+          <div>
+            <img src="../Assets/Images/brenda.jpg" alt="Brenda profile" class="imgProfile" />
+          </div>
+          <div>
+            <h3 class="usersID">Brenda Pierce</h3>
+            <p class="timePost">08:00 AM 01.03.2022</p>
+          </div>
+        </div>
+        <h3 class="userContent">This building is impressive!!!</h3>
+
+        <img src="../Assets/Images/architecture.jpg" alt="Architecture Post" width="100%" />
+
+        <div class="reactionBar">
+          <span class="likeCountIcon">
+            <span class="material-symbols-outlined likeColor">favorite</span>
+            <span class="like"></span>
+          </span>
+          <span class="commentCountIcon">
+            <span class="material-symbols-outlined">chat</span>
+            <span class="comments"></span>
+          </span>
+          <span class="shareCountIcon">
+            <span class="material-symbols-outlined">send</span>
+            <span class="shares"></span>
+          </span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="info">
+          <div>
+            <img src="../Assets/Images/geralt.jpg" alt="Geralt profile" class="imgProfile" />
+          </div>
+          <div>
+            <h3 class="usersID">Geralt Thomson</h3>
+            <p class="timePost">13:30 PM 12.01.2022</p>
+          </div>
+        </div>
+        <h3 class="userContent">Look at this table...😍😍😍</h3>
+
+        <div class="wholeTable">
+          <table class="firstTable">
+            <thead>
+              <td class="tableHead">SPECIFICATION</td>
+              <td class="tableHead vic1">FREE</td>
+              <td class="tableHead vic2">BASIC</td>
+              <td class="tableHead vic3">STANDARD</td>
+              <td class="tableHead vic4">PREMIUM</td>
+            </thead>
+            <table class="nestedTableCenter">
+              <tr>
+                <td class="vic">Lorem, ipsum dolor.</td>
+                <td class="vic1">
+                  <div class="circle">&plus;</div>
+                </td>
+                <td class="vic2">
+                  <div class="circle">&plus;</div>
+                </td>
+                <td class="vic3">
+                  <div class="circle">&plus;</div>
+                </td>
+                <td class="vic4">
+                  <div class="circle">&plus;</div>
+                </td>
+              </tr>
+              <tr>
+                <td class="vic">Aenean massa</td>
+                <td class="vic1">
+                  <div class="circle">&plus;</div>
+                </td>
+                <td class="vic2">
+                  <div class="circle">&plus;</div>
+                </td>
+                <td class="vic3">
+                  <div class="circle">&plus;</div>
+                </td>
+                <td class="vic4">
+                  <div class="circle">&plus;</div>
+                </td>
+              </tr>
+              <tr>
+                <td class="vic">Aliquam lorem</td>
+                <td class="vic1">
+                  <div class="circle">&minus;</div>
+                </td>
+                <td class="vic2">
+                  <div class="circle">&plus;</div>
+                </td>
+                <td class="vic3">
+                  <div class="circle">&plus;</div>
+                </td>
+                <td class="vic4">
+                  <div class="circle">&plus;</div>
+                </td>
+              </tr>
+              <tr>
+                <td class="vic">Donec vitae</td>
+                <td class="vic1">
+                  <div class="circle">&minus;</div>
+                </td>
+                <td class="vic2">
+                  <div class="circle">&minus;</div>
+                </td>
+                <td class="vic3">
+                  <div class="circle">&plus;</div>
+                </td>
+                <td class="vic4">
+                  <div class="circle">&plus;</div>
+                </td>
+              </tr>
+              <tr>
+                <td class="vic">Donec sodales</td>
+                <td class="vic1">
+                  <div class="circle">&minus;</div>
+                </td>
+                <td class="vic2">
+                  <div class="circle">&minus;</div>
+                </td>
+                <td class="vic3">
+                  <div class="circle">&minus;</div>
+                </td>
+                <td class="vic4">
+                  <div class="circle">&plus;</div>
+                </td>
+              </tr>
+              <tr>
+                <td class="vic">Sed consequat</td>
+                <td class="vic1">
+                  <div class="circle">&minus;</div>
+                </td>
+                <td class="vic2">
+                  <div class="circle">&minus;</div>
+                </td>
+                <td class="vic3">
+                  <div class="circle">&minus;</div>
+                </td>
+                <td class="vic4">
+                  <div class="circle">&plus;</div>
+                </td>
+              </tr>
+            </table>
+            <table class="nestedTableBottom">
+              <tr>
+                <td class="dataTableBottom vic">PRICE</td>
+                <td class="dataTableBottom vic1">&dollar; 0.00</td>
+                <td class="dataTableBottom vic2">&dollar; 9.99</td>
+                <td class="dataTableBottom vic3">&dollar; 19.99</td>
+                <td class="dataTableBottom vic4">&dollar; 29.99</td>
+              </tr>
+            </table>
+          </table>
+        </div>
+
+        <div class="reactionBar">
+          <span class="likeCountIcon">
+            <span class="material-symbols-outlined likeColor">favorite</span>
+            <span class="like"></span>
+          </span>
+          <span class="commentCountIcon">
+            <span class="material-symbols-outlined">chat</span>
+            <span class="comments"></span>
+          </span>
+          <span class="shareCountIcon">
+            <span class="material-symbols-outlined">send</span>
+            <span class="shares"></span>
+          </span>
+        </div>
+
+      </div>
+
+      <div class="card">
+        <div class="info">
+          <div>
+            <img src="../Assets/Images/manuel.jpg" alt="Manuel profile" class="imgProfile" />
+          </div>
+          <div>
+            <h3 class="usersID">Manuel Jaques</h3>
+            <p class="timePost">09:30 AM 10.02.2022</p>
+          </div>
+        </div>
+        <h3 class="userContent">Try and catch the SPEEDY CUBE &lt;&minus;&gt;</h3>
+
+        <div class="speedyCube">
+          <div class="cube" title="Dang, you catched me!!!😡😡"></div>
+        </div>
+
+        <div class="reactionBar">
+          <span class="likeCountIcon">
+            <span class="material-symbols-outlined likeColor">favorite</span>
+            <span class="like"></span>
+          </span>
+          <span class="commentCountIcon">
+            <span class="material-symbols-outlined">chat</span>
+            <span class="comments"></span>
+          </span>
+          <span class="shareCountIcon">
+            <span class="material-symbols-outlined">send</span>
+            <span class="shares"></span>
+          </span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="info">
+          <div>
+            <img src="../Assets/Images/joanne.jpg" alt="Joanne profile" class="imgProfile" />
+          </div>
+          <div>
+            <h3 class="usersID">Joanne Brisket</h3>
+            <p class="timePost">06:15 PM 01.05.2022</p>
+          </div>
+        </div>
+        <h3 class="userContent">I'm sexy?😆😆</h3>
+
+        <img src="../Assets/Images/wildebeest.jpg" alt="Wildebeest Post" width="100%" />
+
+        <div class="reactionBar">
+          <span class="likeCountIcon">
+            <span class="material-symbols-outlined likeColor">favorite</span>
+            <span class="like"></span>
+          </span>
+          <span class="commentCountIcon">
+            <span class="material-symbols-outlined">chat</span>
+            <span class="comments"></span>
+          </span>
+          <span class="shareCountIcon">
+            <span class="material-symbols-outlined">send</span>
+            <span class="shares"></span>
+          </span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="info">
+          <div>
+            <img src="../Assets/Images/ivanova.jpg" alt="Ivanova profile" class="imgProfile" />
+          </div>
+          <div>
+            <h3 class="usersID">Ivanova Johnsson</h3>
+            <p class="timePost">06:15 PM 01.05.2022</p>
+          </div>
+        </div>
+        <h3 class="userContent">Just a Table</h3>
+
+        <!-- Style of this table is in styleTable.css -->
+        <div class="huggingTable">
+          <table class="secondTable">
+            <tr>
+              <td class="firstColorTable">ASPECT</td>
+              <td class="secondColorTable">SIMPLE</td>
+              <td class="thirdColorTable">PROGRESSIVE</td>
+              <td class="fourthColorTable">PERECT</td>
+              <td class="fifthColorTable">PERFECT PROGRESSIVE</td>
+            </tr>
+            <tr>
+              <td rowspan="2" class="firstColorTable"><span>MEANING</span></td>
+              <td class="secondColorTable">a common aspect</td>
+              <td class="thirdColorTable">a process</td>
+              <td class="fourthColorTable">priority</td>
+              <td class="fifthColorTable">priority + process</td>
+            </tr>
+            <tr>
+              <td class="secondColorTable"><span>When?</span></td>
+              <td class="thirdColorTable"><span>At what time?</span></td>
+              <td class="fourthColorTable"><span>By what time?</span></td>
+              <td class="fifthColorTable"><span>Since what time? How long?</span></td>
+            </tr>
+            <tr>
+              <td class="firstColorTable">Period of time</td>
+              <td class="secondColorTable">usually, often, always, seldom, every day (week, month, year)</td>
+              <td class="thirdColorTable">now, at the moment</td>
+              <td class="fourthColorTable">ever, never, just, already, not, yet, by 3 p.m.</td>
+              <td class="fifthColorTable">since 3 p.m., for a long time, for a month</td>
+            </tr>
+            <tr>
+              <td rowspan="3" class="firstColorTable">
+                <span class="textCell">Present</span>
+                <table class="threeRows">
+                  <tr>
+                    <td class="plus1">+</td>
+                  </tr>
+                  <tr>
+                    <td class="question1">?</td>
+                  </tr>
+                  <tr>
+                    <td class="minus1">-</td>
+                  </tr>
+                </table>
+              </td>
+
+              <td class="secondColorTable"><span class="boldV">V</span>&#47;<span class="boldV">V</span>s</td>
+              <td class="thirdColorTable">am&#47;is&#47;are + <span class="boldV">V</span>ing</td>
+              <td class="fourthColorTable">have&#47;has + <span class="boldV">V</span>ed&#47;<span
+                  class="boldV">V</span><sub>3</sub></td>
+              <td class="fifthColorTable">have&#47;has + been + <span class="boldV">V</span>ing</td>
+            </tr>
+            <tr>
+              <td class="secondColorTable">do/does + <span class="boldV">V</span></td>
+              <td class="thirdColorTable">inversion</td>
+              <td class="fourthColorTable">inversion</td>
+              <td class="fifthColorTable">inversion</td>
+            </tr>
+            <tr>
+              <td class="secondColorTable">do/does + not + <span class="boldV">V</span>
+              </td>
+              <td class="thirdColorTable">am/is/are + not + <span class="boldV">V</span>ing
+              </td>
+              <td class="fourthColorTable">have/has + not + <span class="boldV">V</span>ed/<span
+                  class="boldV">V</span><sub>3</sub>
+              </td>
+              <td class="fifthColorTable">have/has + not + been + <span class="boldV">V</span>ing</td>
+            </tr>
+
+            <tr>
+              <td class="firstColorTable">Period of time</td>
+              <td class="secondColorTable">yesterday, last week(month, year), long ago</td>
+              <td class="thirdColorTable">yesterday at 3p.m., yesterday from 6 till 7, when you came</td>
+              <td class="fourthColorTable">yesterday by 3p.m., before some time in the past</td>
+              <td class="fifthColorTable">yesterday since 3p.m., for soe time in the past</td>
+            </tr>
+
+            <tr>
+              <td rowspan="3" class="firstColorTable">
+                <span class="textCell">Past</span>
+                <table class="threeRows">
+                  <tr>
+                    <td class="plus2">+</td>
+                  </tr>
+                  <tr>
+                    <td class="question2">?</td>
+                  </tr>
+                  <tr>
+                    <td class="minus2">-</td>
+                  </tr>
+                </table>
+              </td>
+
+              <td class="secondColorTable"><span class="boldV">V</span>ed/<span class="boldV">V</span><sub>2</sub></td>
+              <td class="thirdColorTable">was/were + <span class="boldV">V</span>ing</td>
+              <td class="fourthColorTable">had + <span class="boldV">V</span>ed/<span class="boldV">V</span><sub>3</sub>
+              </td>
+              <td class="fifthColorTable">had + been + <span class="boldV">V</span>ing</td>
+            </tr>
+
+            <tr>
+              <td class="secondColorTable">did + <span class="boldV">V</span></td>
+              <td class="thirdColorTable">inversion</td>
+              <td class="fourthColorTable">inversion</td>
+              <td class="fifthColorTable">inversion</td>
+            </tr>
+
+            <tr>
+              <td class="secondColorTable">did + not + <span class="boldV">V</span></td>
+              <td class="thirdColorTable">was/were + not + <span class="boldV">V</span>ing</td>
+              <td class="fourthColorTable">had + not + <span class="boldV">V</span>ed/<span
+                  class="boldV">V</span><sub>3</sub></td>
+              <td class="fifthColorTable">had + not + been + <span class="boldV">V</span>ing</td>
+            </tr>
+
+            <tr>
+              <td class="firstColorTable">Period of time</td>
+              <td class="secondColorTable">tomorrow, next week (month, year)</td>
+              <td class="thirdColorTable">tomorrow at 3p.m., tomorrow from 6 till 7, when you come</td>
+              <td class="fourthColorTable">tomorrow by 3p.m., before some time in the future</td>
+              <td class="fifthColorTable">tomorrow since 3p.m., for some time in the future</td>
+            </tr>
+
+            <tr>
+              <td rowspan="3" class="firstColorTable">
+                <span class="textCell">Future</span>
+                <table class="threeRows">
+                  <tr>
+                    <td class="plus3">+</td>
+                  </tr>
+                  <tr>
+                    <td class="question3">?</td>
+                  </tr>
+                  <tr>
+                    <td class="minus3">-</td>
+                  </tr>
+                </table>
+              </td>
+
+              <td class="secondColorTable">will + <span class="boldV">V</span></td>
+              <td class="thirdColorTable">will + be + <span class="boldV">V</span>ing</td>
+              <td class="fourthColorTable">will + have + <span class="boldV">V</span>ed/<span
+                  class="boldV">V</span><sub>3</sub></td>
+              <td class="fifthColorTable">will + have + been + <span class="boldV">V</span>ing</td>
+            </tr>
+
+            <tr>
+              <td class="secondColorTable">inversion</td>
+              <td class="thirdColorTable">inversion</td>
+              <td class="fourthColorTable">inversion</td>
+              <td class="fifthColorTable">inversion</td>
+            </tr>
+
+            <tr>
+              <td class="secondColorTable">won't + <span class="boldV">V</span></td>
+              <td class="thirdColorTable">won't + be + <span class="boldV">V</span>ing</td>
+              <td class="fourthColorTable">won't + have + <span class="boldV">V</span>ed/<span
+                  class="boldV">V</span><sub>3</sub></td>
+              <td class="fifthColorTable">won't + have + been + <span class="boldV">V</span>ing</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="reactionBar">
+          <span class="likeCountIcon">
+            <span class="material-symbols-outlined likeColor">favorite</span>
+            <span class="like"></span>
+          </span>
+          <span class="commentCountIcon">
+            <span class="material-symbols-outlined">chat</span>
+            <span class="comments"></span>
+          </span>
+          <span class="shareCountIcon">
+            <span class="material-symbols-outlined">send</span>
+            <span class="shares"></span>
+          </span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="info">
+          <div>
+            <img src="../Assets/Images/griffin profile.jpg" alt="Griffin profile" class="imgProfile" />
+          </div>
+          <div>
+            <h3 class="usersID">Griffin Heldorn</h3>
+            <p class="timePost">06:45 AM 03.03.2021</p>
+          </div>
+        </div>
+        <h3 class="userContent">My beautiful sheeps🐏🐏🐏🐏</h3>
+
+        <img src="../Assets/Images/sheeps.jpg" alt="Sheeps Post" width="100%" />
+
+        <div class="reactionBar">
+          <span class="likeCountIcon">
+            <span class="material-symbols-outlined likeColor">favorite</span>
+            <span class="like"></span>
+          </span>
+          <span class="commentCountIcon">
+            <span class="material-symbols-outlined">chat</span>
+            <span class="comments"></span>
+          </span>
+          <span class="shareCountIcon">
+            <span class="material-symbols-outlined">send</span>
+            <span class="shares"></span>
+          </span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="info">
+          <div>
+            <img src="../Assets/Images/Anne.jpg" alt="Anne profile" class="imgProfile" />
+          </div>
+          <div>
+            <h3 class="usersID">Anne Mary</h3>
+            <p class="timePost">06:45 AM 03.03.2021</p>
+          </div>
+        </div>
+        <h3 class="userContent">Just hover.</h3>
+
+        <div class="task3">
+          <h3>HELLO, MY SITE</h3>
+
+          <img src="../Assets/Images/calculator.png" alt="" width="10%" class="ilustrationCalculator">
+          <img src="../Assets/Images/checklist.png" alt="" width="10%" class="ilustrationCheckList">
+          <img src="../Assets/Images/pencil.png" alt="" width="20%" class="ilustration">
+          <img src="../Assets/Images/notebook.png" alt="" width="10%" class="ilustrationNotebook">
+          <img src="../Assets/Images/canvas.png" alt="" width="10%" class="ilustrationCanvas">
+        </div>
+
+        <div class="reactionBar">
+          <span class="likeCountIcon">
+            <span class="material-symbols-outlined likeColor">favorite</span>
+            <span class="like"></span>
+          </span>
+          <span class="commentCountIcon">
+            <span class="material-symbols-outlined">chat</span>
+            <span class="comments"></span>
+          </span>
+          <span class="shareCountIcon">
+            <span class="material-symbols-outlined">send</span>
+            <span class="shares"></span>
+          </span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="info">
+          <div>
+            <img src="../Assets/Images/Jack profile.jpg" alt="Jack profile" class="imgProfile" />
+          </div>
+          <div>
+            <h3 class="usersID">Jack Seth</h3>
+            <p class="timePost">06:01 PM 03.05.2022</p>
+          </div>
+        </div>
+        <h3 class="userContent">Check this camp site. Is a little bit like Total Drama Island😂😂😂😂</h3>
+
+        <div class="bestCampSitePost">
+          <a href="../Our camp site/indexCamp.html" class="postLink" target="_blank">
+            <img src="../Assets/ImagesOurCampSite/presentationImage.jpg" alt="Sheeps Post" width="100%" />
+            <h1 class="siteTitles">The Best Camp</h1>
+          </a>
+        </div>
+
+        <div class="reactionBar">
+          <span class="likeCountIcon">
+            <span class="material-symbols-outlined likeColor">favorite</span>
+            <span class="like"></span>
+          </span>
+          <span class="commentCountIcon">
+            <span class="material-symbols-outlined">chat</span>
+            <span class="comments"></span>
+          </span>
+          <span class="shareCountIcon">
+            <span class="material-symbols-outlined">send</span>
+            <span class="shares"></span>
+          </span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="info">
+          <div>
+            <img src="../Assets/Images/pietra profile.jpg" alt="Pietra profile" class="imgProfile" />
+          </div>
+          <div>
+            <h3 class="usersID">Pietra Schwarz</h3>
+            <p class="timePost">06:59 PM 03.05.2021</p>
+          </div>
+        </div>
+        <h3 class="userContent">Do you want to redesign your room, desk, or your old house? Check the link below and
+          find out more!</h3>
+
+        <div class="bestCampSitePost">
+          <a href="../Interior Design Studio site/indexInteriorDesign.html" class="postLink" target="_blank">
+            <img src="../Assets/ImagesInteriorDesignStudio/interiorDesignPresentation.jpg"
+              alt="Interior design studio presentation" width="100%" />
+            <h1 class="siteTitles">Interior Design Studio</h1>
+          </a>
+        </div>
+
+        <div class="reactionBar">
+          <span class="likeCountIcon">
+            <span class="material-symbols-outlined likeColor">favorite</span>
+            <span class="like"></span>
+          </span>
+          <span class="commentCountIcon">
+            <span class="material-symbols-outlined">chat</span>
+            <span class="comments"></span>
+          </span>
+          <span class="shareCountIcon">
+            <span class="material-symbols-outlined">send</span>
+            <span class="shares"></span>
+          </span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="info">
+          <div>
+            <img src="../Assets/Images/Mika profile.jpg" alt="Mika profile" class="imgProfile" />
+          </div>
+          <div>
+            <h3 class="usersID">Mika Matin</h3>
+            <p class="timePost">10:59 AM 28.05.2022</p>
+          </div>
+        </div>
+        <h3 class="userContent">Let's have a bit of fun!!! Find the image you like!</h3>
+
+        <div class="gridImages">
+
+          <div class="gallery-item-1">
+            <img class="imgGrid" src="../Assets/Images/architecture.jpg" alt="">
+          </div>
+
+          <div class="gallery-item-2">
+            <img class="imgGrid" src="../Assets/Images/frog.jpg" alt="">
+          </div>
+
+          <div class="gallery-item-3">
+            <img class="imgGrid" src="../Assets/Images/geralt.jpg" alt="">
+          </div>
+
+          <div class="gallery-item-4">
+            <img class="imgGrid" src="../Assets/Images/brenda.jpg" alt="">
+          </div>
+
+          <div class="gallery-item-5">
+            <img class="imgGrid" src="../Assets/Images/boy portrait.jpg" alt="">
+          </div>
+
+          <div class="gallery-item-6">
+            <img class="imgGrid" src="../Assets/Images/city landscape.jpg" alt="">
+          </div>
+
+          <div class="gallery-item-7">
+            <img class="imgGrid" src="../Assets/Images/weed portrait.jpg" alt="">
+          </div>
+
+          <div class="gallery-item-8">
+            <img class="imgGrid" src="../Assets/Images/panda square.jpg" alt="">
+          </div>
+
+          <div class="gallery-item-9">
+            <img class="imgGrid" src="../Assets/Images/cheetah square.jpg" alt="">
+          </div>
+
+          <div class="gallery-item-10">
+            <img class="imgGrid" src="../Assets/Images/cottage portrait.jpg" alt="">
+          </div>
+
+          <div class="gallery-item-11">
+            <img class="imgGrid" src="../Assets/Images/mountains landscape.jpg" alt="">
+          </div>
+
+        </div>
+
+        <div class="reactionBar">
+          <span class="likeCountIcon">
+            <span class="material-symbols-outlined likeColor">favorite</span>
+            <span class="like"></span>
+          </span>
+          <span class="commentCountIcon">
+            <span class="material-symbols-outlined">chat</span>
+            <span class="comments"></span>
+          </span>
+          <span class="shareCountIcon">
+            <span class="material-symbols-outlined">send</span>
+            <span class="shares"></span>
+          </span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="info">
+          <div>
+            <img src="../Assets/Images/ivan.jpg" alt="Ivan profile" class="imgProfile" />
+          </div>
+          <div>
+            <h3 class="usersID">Ivan Perez</h3>
+            <p class="timePost">06:59 PM 03.05.2021</p>
+          </div>
+        </div>
+        <h3 class="userContent">Do you want to redesign your room, desk, or your old house? Check the link below and
+          find out more! Get on our brand new site that is made with Bootstrap.</h3>
+
+        <div class="bestCampSitePost">
+          <a href="../Interior Design Studio site/indexInteriorBootstrap.html" class="postLink" target="_blank">
+            <img src="../Assets/ImagesInteriorDesignStudio/interiorDesignPresentation.jpg"
+              alt="Interior design studio presentation" width="100%" />
+            <h1 class="siteTitles">Interior Design Studio</h1>
+          </a>
+        </div>
+
+        <div class="reactionBar">
+          <span class="likeCountIcon">
+            <span class="material-symbols-outlined likeColor">favorite</span>
+            <span class="like"></span>
+          </span>
+          <span class="commentCountIcon">
+            <span class="material-symbols-outlined">chat</span>
+            <span class="comments"></span>
+          </span>
+          <span class="shareCountIcon">
+            <span class="material-symbols-outlined">send</span>
+            <span class="shares"></span>
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="coverBlock" id="coverBlock">
+    <div class="containerInfo" id="containerInfo">
+      <img src="../Assets/Images/question-mark-green.png" alt="Profile Image" class="containerInfo_profileImage"
+        id="containerProfileImage">
+      <h2 class="containerInfo_userName" id="containerUserName">Your Name</h2>
+      <p class="containerInfo_userInfo" id="containerUserInfo">Your info</p>
+      <h3 class="containerInfo_infoTitle">Edit info about yourself</h3>
+      <form action="" class="containerInfo_changingData">
+        <label for="nameCh" class="containerInfo_label">Enter your name:</label>
+        <input type="text" name="" id="nameCh">
+        <label for="infoCh" class="containerInfo_label">Enter some info about you: </label>
+        <input type="text" name="" id="infoCh">
+        <label for="photo" class="containerInfo_label">Enter a profile picture</label>
+        <input type="file" name="" id="photo">
+        <input type="button" value="Change Data" id="ch_Data" class="containerInfo_button">
+      </form>
+      <div class="userData">
+        <div class="userData_friends">
+          <span class="userData_friends-text">Friends</span>
+          <span class="userData_friends-number">23</span>
+        </div>
+      </div>
+      <div class="userData">
+        <div class="userData_Post">
+          <span class="userData_friends-text">Posts</span>
+          <span class="userData_friends-number">5</span>
+        </div>
+      </div>
+      <div class="userData">
+        <div class="userData_Groups">
+          <span class="userData_friends-text">Groups</span>
+          <span class="userData_friends-number">1</span>
+        </div>
+      </div>
+      <div>
+        <span class="material-symbols-outlined close" id="close">close</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="friendsCover">
+    <div class="blockFriends">
+
+    </div>
+  </div> -->
+</body>
+
+</html>
